@@ -1,29 +1,46 @@
-version: "3"
+version: "3.8"
+
 services:
-  react:
+  #───────────────────────────────────────────────────
+  # 1) React 앱을 build 해서 react_build 볼륨에 담아내는 역할
+  react-build:
     build:
       context: ./location-map-app
+      dockerfile: Dockerfile       # react용 Dockerfile
+      args:
+        - REACT_APP_GOOGLE_MAPS_API_KEY
+    container_name: location-map_react-build
     volumes:
       - react_build:/app/build
-    command: ["true"]
+    working_dir: /app
+    command: |
+      sh -c "npm install && npm run build"
 
+  #───────────────────────────────────────────────────
+  # 2) Express API 서버
   api:
     build:
       context: ./toeic-api
+    container_name: location-map_api
     ports:
       - "4000:4000"
     environment:
       - PORT=4000
 
+  #───────────────────────────────────────────────────
+  # 3) 정적파일 서빙 + API 프록시용 Nginx
   nginx:
-    image: nginx:alpine
+    image: nginx:stable-alpine
+    container_name: location-map_nginx
     depends_on:
       - api
+      - react-build
     ports:
       - "80:80"
     volumes:
       - ./nginx/default.conf:/etc/nginx/conf.d/default.conf:ro
       - react_build:/usr/share/nginx/html
+    restart: unless-stopped
 
 volumes:
   react_build:
