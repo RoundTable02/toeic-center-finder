@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <style>
+      .visually-hidden {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        padding: 0;
+        margin: -1px;
+        overflow: hidden;
+        clip: rect(0 0 0 0);
+        white-space: nowrap;
+        border: 0;
+      }
+    </style>
+
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/location-map.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta name="description" content="내 근처 토익 시험장 찾기, 토익 시험 일정 확인 및 지도 검색 서비스입니다." />
+    <meta name="keywords" content="토익, 토익 시험장, 내 근처 토익, 영어 시험, TOEIC center, 고사장, 토익 고사장, 시험장 찾기" />
+    <meta property="og:title" content="토익 시험장 찾기" />
+    <meta property="og:description" content="전국 토익 시험장을 한눈에, 내 주변에서 가까운 곳을 찾아보세요." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://bevibing.duckdns.org/location-map-app/" />
+    <meta property="og:image" content="%PUBLIC_URL%/img.png" /> <!-- 대표 이미지 있으면 좋아요 -->
+  
+    <meta
+      name="description"
+      content="Web site created using create-react-app"
+    />
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/location-map.png" />
+    <!--
+      manifest.json provides metadata used when your web app is installed on a
+      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+    -->
+    <!-- <link rel="manifest" href="%PUBLIC_URL%/manifest.json" /> -->
+    <!--
+      Notice the use of %PUBLIC_URL% in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "토익 시험장 찾기",
+        "url": "https://bevibing.duckdns.org/location-map-app/",
+        "description": "내 주변 토익 시험장을 찾고 싶다면 지금 검색해보세요.",
+        "inLanguage": "ko-KR"
+      }
+      </script>
+    <title>내 근처 토익 시험장 찾기</title>
+  </head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <h1 class="visually-hidden">내 주변 토익 시험장을 빠르게 찾는 방법</h1>
+    <p class="visually-hidden">토익 시험장 위치를 지도에서 확인하고, 시험 일정도 함께 알아보세요.</p>
+    <div id="root"></div>
+    <!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
+
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
+
+      To begin the development, run `npm start` or `yarn start`.
+      To create a production bundle, use `npm run build` or `yarn build`.
+    -->
+  </body>
+</html>
