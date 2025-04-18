@@ -1,29 +1,32 @@
-version: "3"
+version: "3.8"
 services:
-  react:
+  toeic-center-finder:
     build:
-      context: ./location-map-app
-    volumes:
-      - react_build:/app/build
-    command: ["true"]
-
-  api:
-    build:
-      context: ./toeic-api
+      context: .
+      dockerfile: Dockerfile
+      args:
+        - REACT_APP_GOOGLE_MAPS_API_KEY=${REACT_APP_GOOGLE_MAPS_API_KEY:-your_default_api_key}
+    # Docker Hub 배포를 위한 설정
+    image: ${DOCKER_USERNAME:-yourname}/toeic-center-finder:${TAG:-latest}
+    container_name: toeic-center-finder
     ports:
-      - "4000:4000"
+      - "${HOST_PORT:-80}:80"
+      - "${API_HOST_PORT:-4000}:4000"
+    restart: unless-stopped
+    # 개발 환경에서만 소스 코드 마운트 (NODE_ENV가 development일 때만)
+    volumes:
+      - ./location-map-app/src:/app/frontend/src:ro
+      # API 디렉토리를 마운트하지만 node_modules는 제외
+      # 읽기 전용이 아닌 rw로 변경
+      - ./toeic-api:/app/api:rw
+    # 환경 변수 설정
     environment:
+      - NODE_ENV=${NODE_ENV:-production}
       - PORT=4000
-
-  nginx:
-    image: nginx:alpine
-    depends_on:
-      - api
-    ports:
-      - "80:80"
-    volumes:
-      - ./nginx/default.conf:/etc/nginx/conf.d/default.conf:ro
-      - react_build:/usr/share/nginx/html
-
-volumes:
-  react_build:
+    # 컨테이너 상태 확인
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:4000/api/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 40s
