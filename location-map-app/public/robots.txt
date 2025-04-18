@@ -3,4 +3,4 @@ User-agent: *
 Disallow:
 Allow: /
 
-Sitemap: https://bevibing.duckdns.org/location-map-app/sitemap.xml
+Sitemap: https://roundtable02.github.io/location-map-app/sitemap.xml
