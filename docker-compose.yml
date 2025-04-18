@@ -4,8 +4,6 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
-      args:
-        - REACT_APP_GOOGLE_MAPS_API_KEY=${REACT_APP_GOOGLE_MAPS_API_KEY:-your_default_api_key}
     # Docker Hub 배포를 위한 설정
     image: ${DOCKER_USERNAME:-yourname}/toeic-center-finder:${TAG:-latest}
     container_name: toeic-center-finder
