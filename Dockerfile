@@ -6,8 +6,6 @@ WORKDIR /app/frontend
 COPY location-map-app/package*.json ./
 RUN npm install
 COPY location-map-app/ ./
-ARG REACT_APP_GOOGLE_MAPS_API_KEY
-ENV REACT_APP_GOOGLE_MAPS_API_KEY=$REACT_APP_GOOGLE_MAPS_API_KEY
 RUN npm run build
 
 # API 서버 설정 (여기서는 의존성만 복사하고 설치)
