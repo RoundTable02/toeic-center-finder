@@ -55,5 +55,5 @@ jobs:
             docker pull ${{ secrets.DOCKERHUB_USERNAME }}/toeic-center-finder:latest
             docker stop toeic-center-finder || true
             docker rm toeic-center-finder || true
-            docker run -d --name toeic-center-finder -p 80:80 -p 4000:4000 --restart unless-stopped ${{ secrets.DOCKERHUB_USERNAME }}/toeic-center-finder:latest
+            docker run -d --name toeic-center-finder -p 3000:80 -p 4000:4000 --restart unless-stopped ${{ secrets.DOCKERHUB_USERNAME }}/toeic-center-finder:latest
             docker system prune -af
