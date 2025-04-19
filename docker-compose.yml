@@ -11,6 +11,7 @@ services:
     volumes:
       - ./location-map-app/src:/app/frontend/src:ro
       - ./toeic-api:/app/api:rw
+      - /app/api/node_modules
     environment:
       - NODE_ENV=development
       - PORT=4000
