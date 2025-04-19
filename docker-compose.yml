@@ -4,27 +4,14 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
-    # Docker Hub 배포를 위한 설정
-    image: ${DOCKER_USERNAME:-yourname}/toeic-center-finder:${TAG:-latest}
-    container_name: toeic-center-finder
+    container_name: toeic-center-finder-dev
     ports:
-      - "${HOST_PORT:-80}:80"
-      - "${API_HOST_PORT:-4000}:4000"
-    restart: unless-stopped
-    # 개발 환경에서만 소스 코드 마운트 (NODE_ENV가 development일 때만)
+      - "80:80"
+      - "4000:4000"
     volumes:
       - ./location-map-app/src:/app/frontend/src:ro
-      # API 디렉토리를 마운트하지만 node_modules는 제외
-      # 읽기 전용이 아닌 rw로 변경
       - ./toeic-api:/app/api:rw
-    # 환경 변수 설정
     environment:
-      - NODE_ENV=${NODE_ENV:-production}
+      - NODE_ENV=development
       - PORT=4000
-    # 컨테이너 상태 확인
-    healthcheck:
-      test: ["CMD", "curl", "-f", "http://localhost:4000/api/health"]
-      interval: 30s
-      timeout: 10s
-      retries: 3
-      start_period: 40s
+    restart: unless-stopped
