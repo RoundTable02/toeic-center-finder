@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/6f56fa66-1bf9-4c7c-b675-dd5c9e65f7bb" width=200/>
+  <img width="200" alt="Image" src="https://github.com/user-attachments/assets/2e6cd3b7-7d32-4c7e-8690-9eaaa620453f" />
 </p>
 
 <div align="center">
@@ -11,8 +11,7 @@
 
 <br/>
 
-<img width="800" alt="스크린샷 2025-04-11 오전 12 36 34" src="https://github.com/user-attachments/assets/5be4c565-f8dc-4531-a4ab-0ab42259d001" />
-
+<img width="800" alt="Image" src="https://github.com/user-attachments/assets/b8f833bc-9620-4b81-b2df-009e5341f55c" />
    
 
 **내 근처 토익 시험장 찾으러 가기!**   
