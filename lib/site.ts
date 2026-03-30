@@ -75,11 +75,18 @@ export const buildPageMetadata = ({
 });
 
 export const buildMetadata = (): Metadata =>
-  buildPageMetadata({
-    title: "내 근처 토익 시험장 찾기",
-    description: DEFAULT_DESCRIPTION,
-    path: "/",
-    keywords: ["내 근처 토익", "TOEIC center"],
+  ({
+    ...buildPageMetadata({
+      title: "내 근처 토익 시험장 찾기",
+      description: DEFAULT_DESCRIPTION,
+      path: "/",
+      keywords: ["내 근처 토익", "TOEIC center"],
+    }),
+    verification: {
+      other: {
+        "naver-site-verification": "e3036bd7f9dd301fd4218e4b348b031efc9ead06",
+      },
+    },
   });
 
 export const buildWebsiteStructuredData = () => ({
