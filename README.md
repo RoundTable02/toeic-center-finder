@@ -15,7 +15,7 @@
    
 
 **내 근처 토익 시험장 찾으러 가기!**   
-https://toeic-center-finder.vercel.app/
+https://toeic.roundtable02.com/
 
 *토익 홈페이지가 점검 중인 경우 오류가 발생할 수 있습니다.*
 
@@ -65,7 +65,7 @@ npm run dev
 `.env.example` 기준:
 
 ```bash
-NEXT_PUBLIC_SITE_URL=https://bevibing.duckdns.org
+NEXT_PUBLIC_SITE_URL=https://toeic.roundtable02.com
 TOEIC_UPSTREAM_BASE_URL=https://m.exam.toeic.co.kr/receipt/centerMapProc.php
 TOEIC_PROXY_TIMEOUT_MS=15000
 ```
@@ -141,9 +141,10 @@ node scripts/update-toeic-centers.mjs --report reports/toeic-centers-report.json
 
 - Vercel 프로젝트 루트는 저장소 루트(`/Users/tak/toeic-center-finder`)입니다.
 - Framework Preset 은 Next.js 를 사용합니다.
-- 프로덕션 환경변수로 `NEXT_PUBLIC_SITE_URL` 을 실제 도메인에 맞게 설정합니다.
+- 프로덕션 환경변수 `NEXT_PUBLIC_SITE_URL` 은 반드시 `https://toeic.roundtable02.com` 으로 설정합니다.
 - 필요 시 `TOEIC_PROXY_TIMEOUT_MS` 를 운영 환경에 맞춰 조정합니다.
 - 로컬 CLI 링크 기준 프로젝트 정보는 `.vercel/project.json` 에 생성되며, GitHub Actions 에서는 같은 값을 시크릿으로 사용합니다.
+- 과거 보조 도메인을 다시 연결하더라도 canonical, sitemap, robots, OG 기준 URL은 항상 `https://toeic.roundtable02.com` 하나만 사용합니다.
 
 ## GitHub Actions Vercel 자동 배포
 

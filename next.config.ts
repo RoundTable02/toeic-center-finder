@@ -1,5 +1,8 @@
 import path from "node:path";
 import type { NextConfig } from "next";
+import { assertProductionSiteUrl } from "./lib/site-config";
+
+assertProductionSiteUrl();
 
 const nextConfig: NextConfig = {
   compiler: {

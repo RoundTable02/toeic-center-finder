@@ -83,20 +83,50 @@ test.describe("TOEIC center finder", () => {
     const homeResponse = await request.get("/");
     expect(homeResponse.ok()).toBeTruthy();
     await expect(homeResponse.text()).resolves.not.toContain("/location-map-app");
+    await expect(homeResponse.text()).resolves.toContain(
+      'rel="canonical" href="https://toeic.roundtable02.com"',
+    );
 
     const robotsResponse = await request.get("/robots.txt");
     expect(robotsResponse.ok()).toBeTruthy();
     await expect(robotsResponse.text()).resolves.toContain("Sitemap:");
+    await expect(robotsResponse.text()).resolves.toContain("Host: https://toeic.roundtable02.com");
 
     const sitemapResponse = await request.get("/sitemap.xml");
     expect(sitemapResponse.ok()).toBeTruthy();
     await expect(sitemapResponse.text()).resolves.toContain("<loc>");
+    await expect(sitemapResponse.text()).resolves.toContain(
+      "<loc>https://toeic.roundtable02.com/regions</loc>",
+    );
 
     const ogImageResponse = await request.get("/img.png");
     expect(ogImageResponse.ok()).toBeTruthy();
 
     const legacyResponse = await request.get("/location-map-app/");
     expect(legacyResponse.status()).toBe(404);
+  });
+
+  test("serves crawlable region landing pages with SSR content", async ({ page, request }) => {
+    const regionResponse = await request.get("/regions/%EC%84%9C%EC%9A%B8");
+    expect(regionResponse.ok()).toBeTruthy();
+    await expect(regionResponse.text()).resolves.toContain("서울 토익 시험장 찾기");
+    await expect(regionResponse.text()).resolves.toContain("가장 가까운 시험일 보기");
+
+    const dateResponse = await request.get("/regions/%EC%84%9C%EC%9A%B8/dates/2026-04-26");
+    expect(dateResponse.ok()).toBeTruthy();
+    await expect(dateResponse.text()).resolves.toContain("서울 송파 테스트센터");
+    await expect(dateResponse.text()).resolves.toContain("서울특별시 강동구 성내로 13");
+    await expect(dateResponse.text()).resolves.toContain(
+      'rel="canonical" href="https://toeic.roundtable02.com/regions/%EC%84%9C%EC%9A%B8/dates/2026-04-26"',
+    );
+
+    await page.goto("/regions/%EC%84%9C%EC%9A%B8/dates/2026-04-26");
+    await expect(page.getByRole("heading", { level: 1 })).toContainText(
+      "2026-04-26 서울 토익 시험장",
+    );
+    await expect(page.getByLabel("시험 일정")).toHaveValue("2026-04-26");
+    await expect(page.getByLabel("위치")).toHaveValue("서울");
+    await expect(page.getByTestId("location-item-PBT_004")).toBeVisible();
   });
 
   test("preserves the API contract through Next route handlers", async ({ request }) => {

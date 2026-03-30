@@ -1,48 +1,147 @@
 import type { Metadata } from "next";
-import { DEFAULT_SITE_URL } from "@/lib/constants";
+import { getConfiguredSiteUrl } from "@/lib/site-config";
 
-export const getSiteUrl = (): string =>
-  process.env.NEXT_PUBLIC_SITE_URL || DEFAULT_SITE_URL;
+const DEFAULT_SITE_NAME = "토익 시험장 찾기";
+const DEFAULT_DESCRIPTION =
+  "지역별 토익 시험장과 시험 일정을 한 번에 확인하고, 현재 위치 기준으로 가까운 시험장을 빠르게 찾을 수 있습니다.";
+const DEFAULT_KEYWORDS = [
+  "토익 시험장",
+  "토익 고사장",
+  "지역별 토익 시험장",
+  "시험일별 토익 시험장",
+  "토익 시험 일정",
+  "토익 시험장 찾기",
+];
 
-export const buildMetadata = (): Metadata => {
+export interface BreadcrumbStructuredDataItem {
+  name: string;
+  path: string;
+}
+
+interface PageMetadataOptions {
+  title: string;
+  description: string;
+  path?: string;
+  keywords?: string[];
+}
+
+export const getSiteUrl = (): string => getConfiguredSiteUrl();
+
+export const buildAbsoluteUrl = (path = "/"): string => {
   const siteUrl = getSiteUrl();
-
-  return {
-    metadataBase: new URL(siteUrl),
-    title: "내 근처 토익 시험장 찾기",
-    description:
-      "내 근처 토익 시험장 찾기, 토익 시험 일정 확인 및 지도 검색 서비스입니다.",
-    keywords: [
-      "토익",
-      "토익 시험장",
-      "내 근처 토익",
-      "영어 시험",
-      "TOEIC center",
-      "고사장",
-      "토익 고사장",
-      "시험장 찾기",
-    ],
-    applicationName: "내 근처 토익 시험장 찾기",
-    alternates: {
-      canonical: "/",
-    },
-    openGraph: {
-      title: "토익 시험장 찾기",
-      description: "전국 토익 시험장을 한눈에, 내 주변에서 가까운 곳을 찾아보세요.",
-      type: "website",
-      url: siteUrl,
-      images: [
-        {
-          url: "/img.png",
-          width: 2942,
-          height: 1548,
-          alt: "토익 시험장 찾기 미리보기",
-        },
-      ],
-    },
-    icons: {
-      icon: "/location-map.png",
-      apple: "/location-map.png",
-    },
-  };
+  return path === "/" ? siteUrl : `${siteUrl}${path}`;
 };
+
+export const buildPageMetadata = ({
+  title,
+  description,
+  path = "/",
+  keywords = [],
+}: PageMetadataOptions): Metadata => ({
+  metadataBase: new URL(getSiteUrl()),
+  title,
+  description,
+  keywords: [...DEFAULT_KEYWORDS, ...keywords],
+  applicationName: DEFAULT_SITE_NAME,
+  alternates: {
+    canonical: path,
+  },
+  openGraph: {
+    title,
+    description,
+    type: "website",
+    url: buildAbsoluteUrl(path),
+    siteName: DEFAULT_SITE_NAME,
+    locale: "ko_KR",
+    images: [
+      {
+        url: "/img.png",
+        width: 2942,
+        height: 1548,
+        alt: "토익 시험장 찾기 미리보기",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title,
+    description,
+    images: ["/img.png"],
+  },
+  icons: {
+    icon: "/location-map.png",
+    apple: "/location-map.png",
+  },
+});
+
+export const buildMetadata = (): Metadata =>
+  buildPageMetadata({
+    title: "내 근처 토익 시험장 찾기",
+    description: DEFAULT_DESCRIPTION,
+    path: "/",
+    keywords: ["내 근처 토익", "TOEIC center"],
+  });
+
+export const buildWebsiteStructuredData = () => ({
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  name: DEFAULT_SITE_NAME,
+  url: getSiteUrl(),
+  description: DEFAULT_DESCRIPTION,
+  inLanguage: "ko-KR",
+});
+
+export const buildBreadcrumbStructuredData = (
+  items: BreadcrumbStructuredDataItem[],
+) => ({
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  itemListElement: items.map((item, index) => ({
+    "@type": "ListItem",
+    position: index + 1,
+    name: item.name,
+    item: buildAbsoluteUrl(item.path),
+  })),
+});
+
+export const buildCollectionPageStructuredData = ({
+  name,
+  description,
+  path,
+  itemNames,
+}: {
+  name: string;
+  description: string;
+  path: string;
+  itemNames: string[];
+}) => ({
+  "@context": "https://schema.org",
+  "@type": "CollectionPage",
+  name,
+  description,
+  url: buildAbsoluteUrl(path),
+  inLanguage: "ko-KR",
+  mainEntity: {
+    "@type": "ItemList",
+    itemListElement: itemNames.map((itemName, index) => ({
+      "@type": "ListItem",
+      position: index + 1,
+      name: itemName,
+    })),
+  },
+});
+
+export const buildFaqStructuredData = (
+  items: Array<{ question: string; answer: string }>,
+) => ({
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: items.map((item) => ({
+    "@type": "Question",
+    name: item.question,
+    acceptedAnswer: {
+      "@type": "Answer",
+      text: item.answer,
+    },
+  })),
+});

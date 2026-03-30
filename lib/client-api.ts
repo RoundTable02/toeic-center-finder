@@ -2,17 +2,8 @@ import {
   TOEIC_CENTERS_ENDPOINT,
   TOEIC_SCHEDULE_ENDPOINT,
 } from "@/lib/constants";
+import { decodeHtmlEntities } from "@/lib/html-entities";
 import type { ApiCenterInfo, ExamSchedule } from "@/lib/types";
-
-const decodeHtmlEntities = (text: string): string => {
-  if (typeof window === "undefined") {
-    return text;
-  }
-
-  const textArea = document.createElement("textarea");
-  textArea.innerHTML = text;
-  return textArea.value;
-};
 
 let examSchedulesPromise: Promise<ExamSchedule[]> | null = null;
 const centersPromiseCache = new Map<string, Promise<ApiCenterInfo[]>>();

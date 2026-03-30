@@ -16,6 +16,7 @@
     "test:e2e:live": "PLAYWRIGHT_LIVE_SMOKE=1 playwright test tests/live.smoke.spec.ts"
   },
   "dependencies": {
+    "@vercel/analytics": "^2.0.1",
     "leaflet": "^1.9.4",
     "next": "^15.0.0",
     "react": "^19.0.0",

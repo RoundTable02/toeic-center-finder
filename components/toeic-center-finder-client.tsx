@@ -154,12 +154,22 @@ const buildLocations = (
     return allLocations;
   }, []);
 
-export default function ToeicCenterFinderClient() {
+interface ToeicCenterFinderClientProps {
+  initialExamDate?: string;
+  initialLocationFilter?: string;
+}
+
+export default function ToeicCenterFinderClient({
+  initialExamDate = "",
+  initialLocationFilter = "",
+}: ToeicCenterFinderClientProps) {
   const [locations, setLocations] = useState<Location[]>([]);
   const [examDates, setExamDates] = useState<string[]>([]);
   const [selectedExamType, setSelectedExamType] = useState(EXAM_TYPES[0]);
-  const [selectedExamDate, setSelectedExamDate] = useState("");
-  const [selectedLocationFilter, setSelectedLocationFilter] = useState("");
+  const [selectedExamDate, setSelectedExamDate] = useState(initialExamDate);
+  const [selectedLocationFilter, setSelectedLocationFilter] = useState(
+    initialLocationFilter,
+  );
   const [userLocation, setUserLocation] = useState<Coordinates | null>(null);
   const [selectedLocation, setSelectedLocation] = useState<Location | null>(null);
   const [sortedLocations, setSortedLocations] = useState<Location[]>([]);

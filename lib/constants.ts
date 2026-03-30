@@ -1,3 +1,5 @@
+import { REQUIRED_SITE_URL } from "@/lib/site-config";
+
 export const EXAM_TYPES = ["토익"];
 
 export const LOCATION_FILTERS = [
@@ -26,7 +28,7 @@ export const API_BASE_URL = "/api";
 export const TOEIC_SCHEDULE_ENDPOINT = `${API_BASE_URL}/toeic`;
 export const TOEIC_CENTERS_ENDPOINT = `${API_BASE_URL}/toeic/centers`;
 
-export const DEFAULT_SITE_URL = "https://bevibing.duckdns.org";
+export const DEFAULT_SITE_URL = REQUIRED_SITE_URL;
 export const DEFAULT_TOEIC_UPSTREAM_URL =
   "https://m.exam.toeic.co.kr/receipt/centerMapProc.php";
 
