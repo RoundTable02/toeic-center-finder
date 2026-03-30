@@ -26,14 +26,7 @@ export const assertProductionSiteUrl = (): void => {
   }
 
   const rawSiteUrl = process.env.NEXT_PUBLIC_SITE_URL;
-
-  if (!rawSiteUrl) {
-    throw new Error(
-      `NEXT_PUBLIC_SITE_URL must be set to ${REQUIRED_SITE_URL} for production builds.`,
-    );
-  }
-
-  const siteUrl = normalizeSiteUrl(rawSiteUrl);
+  const siteUrl = normalizeSiteUrl(rawSiteUrl || REQUIRED_SITE_URL);
 
   if (siteUrl !== REQUIRED_SITE_URL) {
     throw new Error(
