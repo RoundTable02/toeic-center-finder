@@ -1,11 +1,47 @@
-# 내 근처 토익 시험장 찾기
+<p align="center">
+  <img width="200" alt="Image" src="https://github.com/user-attachments/assets/2e6cd3b7-7d32-4c7e-8690-9eaaa620453f" />
+</p>
 
-단일 `Next.js App Router` 앱으로 운영되는 토익 시험장 검색 서비스입니다.  
-시험 일정 조회, 지역별 시험장 조회, CSV 좌표 매핑, 현재 위치 기반 거리 정렬, Leaflet 지도 동기화를 한 앱 안에서 제공합니다.
+<div align="center">
+  
+### 내 근처 토익 시험장 찾기
 
-배포 기준 URL은 루트 `/` 이며, 기존 `/location-map-app` 서브패스 의존성은 제거되었습니다.
+토익 시험장, 신청할 때 마다 근처 시험장을 찾느라 고생하셨나요?   
+현재 위치 기준 고사장 위치를 정렬해주는 웹사이트를 만나보세요!
 
-## 기술 스택
+<br/>
+
+<img width="800" alt="Image" src="https://github.com/user-attachments/assets/b8f833bc-9620-4b81-b2df-009e5341f55c" />
+   
+
+**내 근처 토익 시험장 찾으러 가기!**   
+https://toeic-center-finder.vercel.app/
+
+*토익 홈페이지가 점검 중인 경우 오류가 발생할 수 있습니다.*
+
+
+</div>
+
+
+---
+### 기술 스택
+
+
+**[ 해당 웹사이트는 AI와 함께 개발하였습니다. ]**
+
+[![My Skills](https://skillicons.dev/icons?i=html,css,ts,nextjs,react,vercel)](https://skillicons.dev)
+
+<br/>
+
+[[개발 여행기1 - 내 근처에 있는 토익 시험장이 궁금하다]](https://velog.io/@_roundtable/%EB%B9%84%EB%B0%94%EC%9D%B4%EB%B9%99-%ED%86%A0%EC%9D%B5-%EC%8B%9C%ED%97%98%EC%9E%A5-%EC%B0%BE%EA%B8%B0-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-1)
+
+[[개발 여행기2 - 도메인 네임이 맘에 안들어서 어쩌지 (EC2 인스턴스 + nginx 도입기)]](https://velog.io/@_roundtable/%EB%B9%84%EB%B0%94%EC%9D%B4%EB%B9%99-%ED%86%A0%EC%9D%B5-%EC%8B%9C%ED%97%98%EC%9E%A5-%EC%B0%BE%EA%B8%B0-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-2)
+
+[[개발 여행기3 - EC2 인스턴스에 React 도커로 배포하기]](https://velog.io/@_roundtable/%ED%86%A0%EC%9D%B5-%EC%8B%9C%ED%97%98%EC%9E%A5-%EC%B0%BE%EA%B8%B0-3-React-%EB%8F%84%EC%BB%A4%EB%A1%9C-%EB%B0%B0%ED%8F%AC%ED%95%98%EA%B8%B0)
+
+[[개발 여행기4 - Functions 대신 Express.js 서버로 CORS 해결하기]](https://velog.io/@_roundtable/%ED%86%A0%EC%9D%B5-%EC%8B%9C%ED%97%98%EC%9E%A5-%EC%B0%BE%EA%B8%B0-4-Express.js%EC%84%9C%EB%B2%84%EB%A1%9C-CORS-%ED%95%B4%EA%B2%B0%ED%95%98%EA%B8%B0)
+
+<br/>
 
 - Next.js App Router
 - React 19
