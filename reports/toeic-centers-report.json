@@ -1,0 +1,333 @@
+{
+  "version": 1,
+  "summary": {
+    "scannedScheduleCount": 20,
+    "observedCenterCount": 238,
+    "csvCenterCount": 277,
+    "newCenterCount": 0,
+    "staleCenterCount": 39,
+    "changedMetadataCount": 0,
+    "manualReviewCount": 0
+  },
+  "scannedSchedules": [
+    {
+      "examDay": "2026-03-29",
+      "examCode": "TOE_566"
+    },
+    {
+      "examDay": "2026-04-12",
+      "examCode": "TOE_567"
+    },
+    {
+      "examDay": "2026-04-26",
+      "examCode": "TOE_568"
+    },
+    {
+      "examDay": "2026-05-10",
+      "examCode": "TOE_569"
+    },
+    {
+      "examDay": "2026-05-31",
+      "examCode": "TOE_570"
+    },
+    {
+      "examDay": "2026-06-13",
+      "examCode": "TOE_571"
+    },
+    {
+      "examDay": "2026-06-28",
+      "examCode": "TOE_572"
+    },
+    {
+      "examDay": "2026-07-12",
+      "examCode": "TOE_573"
+    },
+    {
+      "examDay": "2026-07-26",
+      "examCode": "TOE_574"
+    },
+    {
+      "examDay": "2026-08-09",
+      "examCode": "TOE_575"
+    },
+    {
+      "examDay": "2026-08-23",
+      "examCode": "TOE_576"
+    },
+    {
+      "examDay": "2026-08-30",
+      "examCode": "TOE_577"
+    },
+    {
+      "examDay": "2026-09-06",
+      "examCode": "TOE_578"
+    },
+    {
+      "examDay": "2026-09-20",
+      "examCode": "TOE_579"
+    },
+    {
+      "examDay": "2026-10-11",
+      "examCode": "TOE_580"
+    },
+    {
+      "examDay": "2026-10-31",
+      "examCode": "TOE_581"
+    },
+    {
+      "examDay": "2026-11-15",
+      "examCode": "TOE_582"
+    },
+    {
+      "examDay": "2026-11-29",
+      "examCode": "TOE_583"
+    },
+    {
+      "examDay": "2026-12-13",
+      "examCode": "TOE_584"
+    },
+    {
+      "examDay": "2026-12-27",
+      "examCode": "TOE_585"
+    }
+  ],
+  "newCenters": [],
+  "staleCenters": [
+    {
+      "centerCode": "DUMMY_001",
+      "centerName": null,
+      "address": null,
+      "bigArea": null
+    },
+    {
+      "centerCode": "DUMMY_002",
+      "centerName": null,
+      "address": null,
+      "bigArea": null
+    },
+    {
+      "centerCode": "DUMMY_003",
+      "centerName": null,
+      "address": null,
+      "bigArea": null
+    },
+    {
+      "centerCode": "DUMMY_SINGLE_001",
+      "centerName": null,
+      "address": null,
+      "bigArea": null
+    },
+    {
+      "centerCode": "PBT_042",
+      "centerName": null,
+      "address": null,
+      "bigArea": null
+    },
+    {
+      "centerCode": "PBT_056",
+      "centerName": null,
+      "address": null,
+      "bigArea": null
+    },
+    {
+      "centerCode": "PBT_095",
+      "centerName": null,
+      "address": null,
+      "bigArea": null
+    },
+    {
+      "centerCode": "PBT_179",
+      "centerName": null,
+      "address": null,
+      "bigArea": null
+    },
+    {
+      "centerCode": "PBT_360",
+      "centerName": null,
+      "address": null,
+      "bigArea": null
+    },
+    {
+      "centerCode": "PBT_476",
+      "centerName": null,
+      "address": null,
+      "bigArea": null
+    },
+    {
+      "centerCode": "PBT_569",
+      "centerName": null,
+      "address": null,
+      "bigArea": null
+    },
+    {
+      "centerCode": "PBT_607",
+      "centerName": null,
+      "address": null,
+      "bigArea": null
+    },
+    {
+      "centerCode": "PBT_644",
+      "centerName": null,
+      "address": null,
+      "bigArea": null
+    },
+    {
+      "centerCode": "PBT_647",
+      "centerName": null,
+      "address": null,
+      "bigArea": null
+    },
+    {
+      "centerCode": "PBT_655",
+      "centerName": null,
+      "address": null,
+      "bigArea": null
+    },
+    {
+      "centerCode": "PBT_662",
+      "centerName": null,
+      "address": null,
+      "bigArea": null
+    },
+    {
+      "centerCode": "PBT_761",
+      "centerName": null,
+      "address": null,
+      "bigArea": null
+    },
+    {
+      "centerCode": "PBT_948",
+      "centerName": null,
+      "address": null,
+      "bigArea": null
+    },
+    {
+      "centerCode": "PBT_957",
+      "centerName": null,
+      "address": null,
+      "bigArea": null
+    },
+    {
+      "centerCode": "PBT_965",
+      "centerName": null,
+      "address": null,
+      "bigArea": null
+    },
+    {
+      "centerCode": "PBT_974",
+      "centerName": null,
+      "address": null,
+      "bigArea": null
+    },
+    {
+      "centerCode": "PBT_B03",
+      "centerName": null,
+      "address": null,
+      "bigArea": null
+    },
+    {
+      "centerCode": "PBT_D40",
+      "centerName": null,
+      "address": null,
+      "bigArea": null
+    },
+    {
+      "centerCode": "PBT_D44",
+      "centerName": null,
+      "address": null,
+      "bigArea": null
+    },
+    {
+      "centerCode": "PBT_E22",
+      "centerName": null,
+      "address": null,
+      "bigArea": null
+    },
+    {
+      "centerCode": "PBT_F24",
+      "centerName": null,
+      "address": null,
+      "bigArea": null
+    },
+    {
+      "centerCode": "PBT_H02",
+      "centerName": null,
+      "address": null,
+      "bigArea": null
+    },
+    {
+      "centerCode": "PBT_H35",
+      "centerName": null,
+      "address": null,
+      "bigArea": null
+    },
+    {
+      "centerCode": "PBT_H40",
+      "centerName": null,
+      "address": null,
+      "bigArea": null
+    },
+    {
+      "centerCode": "PBT_H42",
+      "centerName": null,
+      "address": null,
+      "bigArea": null
+    },
+    {
+      "centerCode": "PBT_H67",
+      "centerName": null,
+      "address": null,
+      "bigArea": null
+    },
+    {
+      "centerCode": "PBT_H68",
+      "centerName": null,
+      "address": null,
+      "bigArea": null
+    },
+    {
+      "centerCode": "PBT_H90",
+      "centerName": null,
+      "address": null,
+      "bigArea": null
+    },
+    {
+      "centerCode": "PBT_M12",
+      "centerName": null,
+      "address": null,
+      "bigArea": null
+    },
+    {
+      "centerCode": "PBT_M15",
+      "centerName": null,
+      "address": null,
+      "bigArea": null
+    },
+    {
+      "centerCode": "PBT_M50",
+      "centerName": null,
+      "address": null,
+      "bigArea": null
+    },
+    {
+      "centerCode": "PBT_M71",
+      "centerName": null,
+      "address": null,
+      "bigArea": null
+    },
+    {
+      "centerCode": "PBT_N03",
+      "centerName": null,
+      "address": null,
+      "bigArea": null
+    },
+    {
+      "centerCode": "PBT_N19",
+      "centerName": null,
+      "address": null,
+      "bigArea": null
+    }
+  ],
+  "changedMetadata": [],
+  "manualReview": []
+}

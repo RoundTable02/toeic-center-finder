@@ -7,3 +7,9 @@ logs
 
 node_modules
 bower_components
+.next
+playwright-report
+test-results
+*.tsbuildinfo
+.vercel
+.env*.local

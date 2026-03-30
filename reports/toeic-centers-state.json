@@ -1,0 +1,1433 @@
+{
+  "version": 1,
+  "centers": [
+    {
+      "centerCode": "PBT_004",
+      "centerName": "신명중",
+      "address": "서울특별시 강동구 명일로24길 25 (길동, 신명중학교)",
+      "bigArea": "서울"
+    },
+    {
+      "centerCode": "PBT_006",
+      "centerName": "구룡중",
+      "address": "서울특별시 강남구 선릉로 103 (개포동, 구룡중학교)",
+      "bigArea": "서울"
+    },
+    {
+      "centerCode": "PBT_015",
+      "centerName": "신도봉중",
+      "address": "서울특별시 도봉구 도봉로115길 16 (쌍문동, 신도봉중학교) (구 도봉여중)",
+      "bigArea": "서울"
+    },
+    {
+      "centerCode": "PBT_022",
+      "centerName": "방배중",
+      "address": "서울특별시 서초구 동광로 144 (반포동, 방배중학교)",
+      "bigArea": "서울"
+    },
+    {
+      "centerCode": "PBT_023",
+      "centerName": "삼선중",
+      "address": "서울특별시 성북구 동소문로3길 69 (동소문동4가, 삼선중학교)",
+      "bigArea": "서울"
+    },
+    {
+      "centerCode": "PBT_036",
+      "centerName": "선유중",
+      "address": "서울특별시 영등포구 선유로 213 (양평동3가, 선유중학교)",
+      "bigArea": "서울"
+    },
+    {
+      "centerCode": "PBT_037",
+      "centerName": "양화중",
+      "address": "서울특별시 영등포구 당산로 56 (문래동3가, 양화중학교)",
+      "bigArea": "서울"
+    },
+    {
+      "centerCode": "PBT_054",
+      "centerName": "등촌고",
+      "address": "서울특별시 강서구 공항대로39길 115 (등촌동, 등촌고등학교)",
+      "bigArea": "서울"
+    },
+    {
+      "centerCode": "PBT_070",
+      "centerName": "신림중",
+      "address": "서울특별시 관악구 신림로 40 (신림동, 서울신림중학교)",
+      "bigArea": "서울"
+    },
+    {
+      "centerCode": "PBT_079",
+      "centerName": "선린인터넷고",
+      "address": "서울특별시 용산구 원효로97길 33-4 (청파동3가, 선린중학교,선린인터넷고등학교) 선린인터넷고등학교",
+      "bigArea": "서울"
+    },
+    {
+      "centerCode": "PBT_089",
+      "centerName": "구로중",
+      "address": "서울특별시 구로구 구로중앙로 48 (구로동, 구로중학교)",
+      "bigArea": "서울"
+    },
+    {
+      "centerCode": "PBT_094",
+      "centerName": "선린중",
+      "address": "서울특별시 용산구 원효로97길 33-4 (청파동3가, 선린중학교,선린인터넷고등학교) 선린중학교",
+      "bigArea": "서울"
+    },
+    {
+      "centerCode": "PBT_097",
+      "centerName": "동마중",
+      "address": "서울특별시 성동구 마조로11길 18 (마장동, 동마중학교)",
+      "bigArea": "서울"
+    },
+    {
+      "centerCode": "PBT_108",
+      "centerName": "하단중",
+      "address": "부산광역시 사하구 하신번영로380번길 88",
+      "bigArea": "부산"
+    },
+    {
+      "centerCode": "PBT_115",
+      "centerName": "울산공고",
+      "address": "울산광역시 남구 중앙로204번길 49 (신정동, 울산공업고등학교)",
+      "bigArea": "울산"
+    },
+    {
+      "centerCode": "PBT_117",
+      "centerName": "경남공고",
+      "address": "부산광역시 부산진구 전포대로175번길 22 (전포동, 경남공업고등학교)",
+      "bigArea": "부산"
+    },
+    {
+      "centerCode": "PBT_121",
+      "centerName": "부산전자공고",
+      "address": "부산광역시 동래구 금강로59번길 51 (온천동, 부산전자공업고등학교)",
+      "bigArea": "부산"
+    },
+    {
+      "centerCode": "PBT_128",
+      "centerName": "부산공고",
+      "address": "부산광역시 남구 수영로196번길 80",
+      "bigArea": "부산"
+    },
+    {
+      "centerCode": "PBT_131",
+      "centerName": "유락여중",
+      "address": "부산광역시 동래구 금강로 51",
+      "bigArea": "부산"
+    },
+    {
+      "centerCode": "PBT_144",
+      "centerName": "울산상고",
+      "address": "울산광역시 울주군 장검길 11",
+      "bigArea": "울산"
+    },
+    {
+      "centerCode": "PBT_147",
+      "centerName": "연제중",
+      "address": "부산광역시 연제구 쌍미천로 62 (연산동, 연제중학교)",
+      "bigArea": "부산"
+    },
+    {
+      "centerCode": "PBT_161",
+      "centerName": "부산마케팅고",
+      "address": "부산광역시 부산진구 봉수로 13 (전포동, 부산마케팅고등학교, 덕명여자중학교)",
+      "bigArea": "부산"
+    },
+    {
+      "centerCode": "PBT_171",
+      "centerName": "해운대여중",
+      "address": "부산광역시 해운대구 우동1로85번길 25 (우동, 해운대여자중학교)",
+      "bigArea": "부산"
+    },
+    {
+      "centerCode": "PBT_174",
+      "centerName": "양산중앙중",
+      "address": "경상남도 양산시 양주로 21",
+      "bigArea": "경남"
+    },
+    {
+      "centerCode": "PBT_177",
+      "centerName": "신라중",
+      "address": "부산광역시 사상구 백양대로700번길 35-8 (덕포동, 신라중학교)",
+      "bigArea": "부산"
+    },
+    {
+      "centerCode": "PBT_181",
+      "centerName": "부산하남중",
+      "address": "부산광역시 사하구 하신번영로 206 (하단동, 하남중학교)",
+      "bigArea": "부산"
+    },
+    {
+      "centerCode": "PBT_191",
+      "centerName": "울산학성여중",
+      "address": "울산광역시 중구 명정3길 12",
+      "bigArea": "울산"
+    },
+    {
+      "centerCode": "PBT_207",
+      "centerName": "신명여중",
+      "address": "대구광역시 수성구 신천동로 364",
+      "bigArea": "대구"
+    },
+    {
+      "centerCode": "PBT_210",
+      "centerName": "구미옥계중",
+      "address": "경상북도 구미시 거양길 18-7 (거의동, 옥계중학교)",
+      "bigArea": "경북"
+    },
+    {
+      "centerCode": "PBT_225",
+      "centerName": "영남대 천마관",
+      "address": "경상북도 경산시 대학로 280 (대동, 영남대학교) 종합강의동",
+      "bigArea": "경북"
+    },
+    {
+      "centerCode": "PBT_226",
+      "centerName": "대구과학기술고",
+      "address": "대구광역시 서구 당산로 228 (내당동, 서부공업고등학교)",
+      "bigArea": "대구"
+    },
+    {
+      "centerCode": "PBT_231",
+      "centerName": "안양대(수리관)",
+      "address": "경기도 안양시 만안구 삼덕로37번길 22 (안양동, 안양대학교) 수리관",
+      "bigArea": "경기"
+    },
+    {
+      "centerCode": "PBT_235",
+      "centerName": "대구하이텍고",
+      "address": "대구광역시 달서구 학산남로 50",
+      "bigArea": "대구"
+    },
+    {
+      "centerCode": "PBT_240",
+      "centerName": "구미여중",
+      "address": "경상북도 구미시 금오산로 162",
+      "bigArea": "경북"
+    },
+    {
+      "centerCode": "PBT_243",
+      "centerName": "경북기계공고",
+      "address": "대구광역시 달서구 월배로 275 (상인동, 경북기계공업고등학교)",
+      "bigArea": "대구"
+    },
+    {
+      "centerCode": "PBT_261",
+      "centerName": "길주중",
+      "address": "경상북도 안동시 경동로 931",
+      "bigArea": "경북"
+    },
+    {
+      "centerCode": "PBT_264",
+      "centerName": "대구고산중",
+      "address": "대구광역시 수성구 천을로 71",
+      "bigArea": "대구"
+    },
+    {
+      "centerCode": "PBT_265",
+      "centerName": "동국대원효관",
+      "address": "경상북도 경주시 동대로 123 동국대원효관",
+      "bigArea": "경북"
+    },
+    {
+      "centerCode": "PBT_282",
+      "centerName": "동래여중",
+      "address": "부산광역시 금정구 체육공원로 20 (구서동, 동래여자중고등학교,부산예술중고등학교) 동래여자중학교",
+      "bigArea": "부산"
+    },
+    {
+      "centerCode": "PBT_300",
+      "centerName": "문래중",
+      "address": "서울특별시 영등포구 선유서로13길 6",
+      "bigArea": "서울"
+    },
+    {
+      "centerCode": "PBT_302",
+      "centerName": "갑천중",
+      "address": "대전광역시 서구 월평동로 80",
+      "bigArea": "대전"
+    },
+    {
+      "centerCode": "PBT_306",
+      "centerName": "충남여중",
+      "address": "대전광역시 중구 동서대로1352번길 33",
+      "bigArea": "대전"
+    },
+    {
+      "centerCode": "PBT_312",
+      "centerName": "당진중",
+      "address": "충청남도 당진시 운학길 41 (채운동, 당진중학교)",
+      "bigArea": "충청"
+    },
+    {
+      "centerCode": "PBT_326",
+      "centerName": "남선중",
+      "address": "대전광역시 서구 월평북로 41 (월평동, 남선중학교)",
+      "bigArea": "대전"
+    },
+    {
+      "centerCode": "PBT_333",
+      "centerName": "둔산중",
+      "address": "대전광역시 서구 갈마역로25번길 70",
+      "bigArea": "대전"
+    },
+    {
+      "centerCode": "PBT_334",
+      "centerName": "대전여중",
+      "address": "대전광역시 중구 보문로230번길 69",
+      "bigArea": "대전"
+    },
+    {
+      "centerCode": "PBT_343",
+      "centerName": "만년중",
+      "address": "대전광역시 서구 만년남로 17",
+      "bigArea": "대전"
+    },
+    {
+      "centerCode": "PBT_348",
+      "centerName": "고려대세종캠(농심국제관)",
+      "address": "세종특별자치시 조치원읍 세종로 2511 (조치원읍, 고려대학교세종캠퍼스) 1",
+      "bigArea": "세종"
+    },
+    {
+      "centerCode": "PBT_349",
+      "centerName": "송촌중",
+      "address": "대전광역시 대덕구 계족산로 110",
+      "bigArea": "대전"
+    },
+    {
+      "centerCode": "PBT_352",
+      "centerName": "경덕중",
+      "address": "충청북도 청주시 흥덕구 풍년로79번길 7",
+      "bigArea": "충청"
+    },
+    {
+      "centerCode": "PBT_365",
+      "centerName": "건양대의학관",
+      "address": "충청남도 논산시 대학로 121",
+      "bigArea": "충청"
+    },
+    {
+      "centerCode": "PBT_374",
+      "centerName": "천안공고",
+      "address": "충청남도 천안시 동남구 성황5길 17",
+      "bigArea": "충청"
+    },
+    {
+      "centerCode": "PBT_377",
+      "centerName": "공주정보고",
+      "address": "충청남도 공주시 마근동길 29",
+      "bigArea": "충청"
+    },
+    {
+      "centerCode": "PBT_380",
+      "centerName": "문화여중",
+      "address": "대전광역시 중구 문화로218번길 63",
+      "bigArea": "대전"
+    },
+    {
+      "centerCode": "PBT_421",
+      "centerName": "광주영천중",
+      "address": "광주광역시 광산구 사암로340번안길 21",
+      "bigArea": "광주"
+    },
+    {
+      "centerCode": "PBT_432",
+      "centerName": "전주공고",
+      "address": "전라북도 전주시 덕진구 여산로 101",
+      "bigArea": "전북"
+    },
+    {
+      "centerCode": "PBT_435",
+      "centerName": "유달중",
+      "address": "전라남도 목포시 산정로 171",
+      "bigArea": "전남"
+    },
+    {
+      "centerCode": "PBT_452",
+      "centerName": "광주금호중",
+      "address": "광주광역시 서구 금화로115번길 72",
+      "bigArea": "광주"
+    },
+    {
+      "centerCode": "PBT_464",
+      "centerName": "문흥중",
+      "address": "광주광역시 북구 능안로 2",
+      "bigArea": "광주"
+    },
+    {
+      "centerCode": "PBT_465",
+      "centerName": "전일중(전주)",
+      "address": "전라북도 전주시 덕진구 모래내6길 36",
+      "bigArea": "전북"
+    },
+    {
+      "centerCode": "PBT_473",
+      "centerName": "원광대새천년관",
+      "address": "전라북도 익산시 익산대로33길 23",
+      "bigArea": "전북"
+    },
+    {
+      "centerCode": "PBT_491",
+      "centerName": "김해월산중",
+      "address": "경상남도 김해시 월산로 104",
+      "bigArea": "경남"
+    },
+    {
+      "centerCode": "PBT_501",
+      "centerName": "경남대 고운관",
+      "address": "경상남도 창원시 마산합포구 경남대학로 7",
+      "bigArea": "경남"
+    },
+    {
+      "centerCode": "PBT_505",
+      "centerName": "명서중",
+      "address": "경상남도 창원시 의창구 명지로 54",
+      "bigArea": "경남"
+    },
+    {
+      "centerCode": "PBT_506",
+      "centerName": "신어중",
+      "address": "경상남도 김해시 삼안로195번길 7",
+      "bigArea": "경남"
+    },
+    {
+      "centerCode": "PBT_512",
+      "centerName": "경대부중",
+      "address": "경상남도 진주시 가좌길29번길 63 (가좌동, 경상대학교) 사범대학부설중학교",
+      "bigArea": "경남"
+    },
+    {
+      "centerCode": "PBT_529",
+      "centerName": "거창대성고",
+      "address": "경상남도 거창군 거열로 81",
+      "bigArea": "경남"
+    },
+    {
+      "centerCode": "PBT_539",
+      "centerName": "풍문고",
+      "address": "서울특별시 강남구 자곡로 152 (자곡동) 풍문고등학교",
+      "bigArea": "서울"
+    },
+    {
+      "centerCode": "PBT_564",
+      "centerName": "한라대 운곡관",
+      "address": "강원도 원주시 한라대길 28",
+      "bigArea": "강원"
+    },
+    {
+      "centerCode": "PBT_565",
+      "centerName": "선문대인문관",
+      "address": "충청남도 아산시 탕정면 선문로221번길 70 (탕정면, 선문대학교) 인문관",
+      "bigArea": "충청"
+    },
+    {
+      "centerCode": "PBT_596",
+      "centerName": "대왕중",
+      "address": "서울특별시 강남구 광평로20길 7 (수서동, 대왕중학교)",
+      "bigArea": "서울"
+    },
+    {
+      "centerCode": "PBT_600",
+      "centerName": "수원동성중",
+      "address": "경기도 수원시 팔달구 월드컵로 293 (우만동, 동성중학교)",
+      "bigArea": "경기"
+    },
+    {
+      "centerCode": "PBT_605",
+      "centerName": "동두천여중",
+      "address": "경기도 동두천시 평화로2452번길 31 (생연동, 동두천여자중학교)",
+      "bigArea": "경기"
+    },
+    {
+      "centerCode": "PBT_613",
+      "centerName": "원천중",
+      "address": "경기도 수원시 영통구 동수원로551번길 38 (원천동, 원천중학교)",
+      "bigArea": "경기"
+    },
+    {
+      "centerCode": "PBT_622",
+      "centerName": "권선중",
+      "address": "경기도 수원시 권선구 경수대로 239 (세류동, 권선중학교)",
+      "bigArea": "경기"
+    },
+    {
+      "centerCode": "PBT_623",
+      "centerName": "삼일공고",
+      "address": "경기도 수원시 팔달구 수원천로392번길 44-60 (매향동, 삼일공고)",
+      "bigArea": "경기"
+    },
+    {
+      "centerCode": "PBT_628",
+      "centerName": "남수원중",
+      "address": "경기도 수원시 권선구 권중로 162 (권선동, 남수원중학교)",
+      "bigArea": "경기"
+    },
+    {
+      "centerCode": "PBT_651",
+      "centerName": "등명중",
+      "address": "서울특별시 강서구 공항대로39길 39 (등촌동, 등명중학교)",
+      "bigArea": "서울"
+    },
+    {
+      "centerCode": "PBT_652",
+      "centerName": "성서중",
+      "address": "서울특별시 마포구 성산로4길 42 (성산동, 성서중학교)",
+      "bigArea": "서울"
+    },
+    {
+      "centerCode": "PBT_659",
+      "centerName": "한울중",
+      "address": "서울특별시 금천구 독산로50길 60 (시흥동, 한울중학교)",
+      "bigArea": "서울"
+    },
+    {
+      "centerCode": "PBT_670",
+      "centerName": "오남중",
+      "address": "서울특별시 구로구 오리로9길 25 (오류동, 오남중학교)",
+      "bigArea": "서울"
+    },
+    {
+      "centerCode": "PBT_680",
+      "centerName": "신목중",
+      "address": "서울특별시 양천구 목동중앙로 88 (목동, 신목중학교)",
+      "bigArea": "서울"
+    },
+    {
+      "centerCode": "PBT_682",
+      "centerName": "온곡중",
+      "address": "서울특별시 노원구 노원로 492 (상계동, 온곡중학교)",
+      "bigArea": "서울"
+    },
+    {
+      "centerCode": "PBT_683",
+      "centerName": "상경중",
+      "address": "서울특별시 노원구 동일로227길 61 (상계동, 상경중학교)",
+      "bigArea": "서울"
+    },
+    {
+      "centerCode": "PBT_688",
+      "centerName": "수원공업고",
+      "address": "경기도 수원시 팔달구 세지로 254 (인계동, 수원공업고등학교)",
+      "bigArea": "경기"
+    },
+    {
+      "centerCode": "PBT_709",
+      "centerName": "구월중",
+      "address": "인천광역시 남동구 남동대로 814 (구월동, 구월중학교)",
+      "bigArea": "인천"
+    },
+    {
+      "centerCode": "PBT_711",
+      "centerName": "부평공고",
+      "address": "인천광역시 부평구 주부토로 194 (갈산동, 부평공업고등학교)",
+      "bigArea": "인천"
+    },
+    {
+      "centerCode": "PBT_739",
+      "centerName": "인천중",
+      "address": "인천광역시 연수구 함박뫼로 203 (연수동, 인천중학교)",
+      "bigArea": "인천"
+    },
+    {
+      "centerCode": "PBT_743",
+      "centerName": "매송중",
+      "address": "경기도 성남시 분당구 탄천로 49 (이매동, 매송중학교)",
+      "bigArea": "경기"
+    },
+    {
+      "centerCode": "PBT_755",
+      "centerName": "청량고",
+      "address": "서울특별시 동대문구 왕산로 303 (청량리동, 청량고등학교)",
+      "bigArea": "서울"
+    },
+    {
+      "centerCode": "PBT_756",
+      "centerName": "일산국제컨벤션고",
+      "address": "경기도 고양시 일산서구 고봉로 133 (주엽동, 일산국제컨벤션고등학교)",
+      "bigArea": "경기"
+    },
+    {
+      "centerCode": "PBT_781",
+      "centerName": "서울여중",
+      "address": "서울특별시 마포구 백범로25길 34 (염리동) 서울여자중학교",
+      "bigArea": "서울"
+    },
+    {
+      "centerCode": "PBT_797",
+      "centerName": "상도중",
+      "address": "경기도 부천시 장말로 159 (상동, 상도중학교)",
+      "bigArea": "경기"
+    },
+    {
+      "centerCode": "PBT_817",
+      "centerName": "제주서중",
+      "address": "제주특별자치도 제주시 일주서로 7811 (연동, 제주서중학교)",
+      "bigArea": "제주"
+    },
+    {
+      "centerCode": "PBT_829",
+      "centerName": "강원대인문사회과학관",
+      "address": "강원도 삼척시 중앙로 346 (교동, 강원대학교삼척캠퍼스)",
+      "bigArea": "강원"
+    },
+    {
+      "centerCode": "PBT_842",
+      "centerName": "신한중",
+      "address": "경기도 평택시 신한1길 26 (비전동, 신한중,고등학교) 신한중학교",
+      "bigArea": "경기"
+    },
+    {
+      "centerCode": "PBT_843",
+      "centerName": "경기스마트고",
+      "address": "경기도 시흥시 정왕천로 404 (정왕동, 경기스마트고등학교)",
+      "bigArea": "경기"
+    },
+    {
+      "centerCode": "PBT_846",
+      "centerName": "송호중",
+      "address": "경기도 안산시 단원구 광덕3로 240 (고잔동, 송호중학교)",
+      "bigArea": "경기"
+    },
+    {
+      "centerCode": "PBT_852",
+      "centerName": "저동중",
+      "address": "경기도 고양시 일산동구 무궁화로 159 (정발산동, 저동중학교)",
+      "bigArea": "경기"
+    },
+    {
+      "centerCode": "PBT_859",
+      "centerName": "대방중",
+      "address": "서울특별시 동작구 여의대방로10길 24 (신대방동, 대방중학교)",
+      "bigArea": "서울"
+    },
+    {
+      "centerCode": "PBT_889",
+      "centerName": "무학중",
+      "address": "서울특별시 성동구 행당로 120 (행당동, 무학중학교)",
+      "bigArea": "서울"
+    },
+    {
+      "centerCode": "PBT_891",
+      "centerName": "곡란중",
+      "address": "경기도 군포시 곡란로 95 (산본동, 곡란중학교)",
+      "bigArea": "경기"
+    },
+    {
+      "centerCode": "PBT_911",
+      "centerName": "제주중앙여중",
+      "address": "제주특별자치도 제주시 서사로11길 8 (삼도이동, 제주중앙여자중학교)",
+      "bigArea": "제주"
+    },
+    {
+      "centerCode": "PBT_914",
+      "centerName": "강현중",
+      "address": "서울특별시 동작구 상도로13라길 22 (상도동, 강현중학교)",
+      "bigArea": "서울"
+    },
+    {
+      "centerCode": "PBT_915",
+      "centerName": "대명중",
+      "address": "서울특별시 강남구 역삼로87길 26 (대치동, 대명중학교)",
+      "bigArea": "서울"
+    },
+    {
+      "centerCode": "PBT_923",
+      "centerName": "고덕중",
+      "address": "서울특별시 강동구 동남로82길 94 (고덕동, 고덕중학교)",
+      "bigArea": "서울"
+    },
+    {
+      "centerCode": "PBT_928",
+      "centerName": "신림고",
+      "address": "서울특별시 관악구 문성로 119 (신림동, 서울신림고등학교)",
+      "bigArea": "서울"
+    },
+    {
+      "centerCode": "PBT_930",
+      "centerName": "자양중",
+      "address": "서울특별시 광진구 뚝섬로41길 33 (자양동, 서울자양중학교)",
+      "bigArea": "서울"
+    },
+    {
+      "centerCode": "PBT_940",
+      "centerName": "인헌중",
+      "address": "서울특별시 관악구 인헌9길 35 (봉천동, 서울인헌중학교)",
+      "bigArea": "서울"
+    },
+    {
+      "centerCode": "PBT_944",
+      "centerName": "언남고",
+      "address": "서울특별시 서초구 동산로13길 35 (양재동, 언남고등학교,언남교육문화회관)",
+      "bigArea": "서울"
+    },
+    {
+      "centerCode": "PBT_945",
+      "centerName": "언남중",
+      "address": "서울특별시 서초구 동산로 55 (양재동, 언남중학교)",
+      "bigArea": "서울"
+    },
+    {
+      "centerCode": "PBT_949",
+      "centerName": "태릉고",
+      "address": "서울특별시 중랑구 신내로23길 36 (묵동, 태릉고등학교)",
+      "bigArea": "서울"
+    },
+    {
+      "centerCode": "PBT_951",
+      "centerName": "신수중",
+      "address": "서울특별시 마포구 신수로 49 (신수동, 신수중학교)",
+      "bigArea": "서울"
+    },
+    {
+      "centerCode": "PBT_956",
+      "centerName": "대신고",
+      "address": "서울특별시 종로구 사직로 9 (행촌동, 대신중고등학교)",
+      "bigArea": "서울"
+    },
+    {
+      "centerCode": "PBT_967",
+      "centerName": "성산중",
+      "address": "서울특별시 마포구 성지1길 32-13 (합정동, 성산중학교)",
+      "bigArea": "서울"
+    },
+    {
+      "centerCode": "PBT_973",
+      "centerName": "서운중",
+      "address": "서울특별시 서초구 서운로 115 (서초동, 서운중학교)",
+      "bigArea": "서울"
+    },
+    {
+      "centerCode": "PBT_976",
+      "centerName": "대청중",
+      "address": "서울특별시 강남구 양재천로 321 (대치동, 대청중학교)",
+      "bigArea": "서울"
+    },
+    {
+      "centerCode": "PBT_981",
+      "centerName": "상계제일중",
+      "address": "서울특별시 노원구 덕릉로86길 29-15 (중계동, 상계제일중학교)",
+      "bigArea": "서울"
+    },
+    {
+      "centerCode": "PBT_985",
+      "centerName": "안양공고",
+      "address": "경기도 안양시 만안구 양화로28번길 69 (안양동, 안양공업고등학교)",
+      "bigArea": "경기"
+    },
+    {
+      "centerCode": "PBT_993",
+      "centerName": "부림중",
+      "address": "경기도 안양시 동안구 달안로 95 (관양동, 부림중학교)",
+      "bigArea": "경기"
+    },
+    {
+      "centerCode": "PBT_B01",
+      "centerName": "인왕중",
+      "address": "서울특별시 서대문구 세검정로4길 69 (홍제동, 인왕중학교)",
+      "bigArea": "서울"
+    },
+    {
+      "centerCode": "PBT_B06",
+      "centerName": "숭인중",
+      "address": "서울특별시 동대문구 천호대로47길 34 (답십리동, 숭인중학교)",
+      "bigArea": "서울"
+    },
+    {
+      "centerCode": "PBT_B25",
+      "centerName": "강원대 강릉캠 인문관",
+      "address": "강원특별자치도 강릉시 죽헌길 7 (지변동, 강원대학교 강릉캠퍼스) 강원대학교 강릉캠퍼스 인문관",
+      "bigArea": "강원"
+    },
+    {
+      "centerCode": "PBT_B50",
+      "centerName": "수송중",
+      "address": "서울특별시 강북구 한천로122길 21 (번동, 수송중학교)",
+      "bigArea": "서울"
+    },
+    {
+      "centerCode": "PBT_B56",
+      "centerName": "월촌중",
+      "address": "서울특별시 양천구 목동서로 31 (목동, 월촌중학교)",
+      "bigArea": "서울"
+    },
+    {
+      "centerCode": "PBT_B58",
+      "centerName": "방화중",
+      "address": "서울특별시 강서구 개화동로27길 9 (방화동, 방화중학교)",
+      "bigArea": "서울"
+    },
+    {
+      "centerCode": "PBT_B66",
+      "centerName": "솔샘중",
+      "address": "서울특별시 강북구 인수봉로 39 (미아동, 미양중.고등학교)",
+      "bigArea": "서울"
+    },
+    {
+      "centerCode": "PBT_B68",
+      "centerName": "서울의료보건고",
+      "address": "서울특별시 중구 만리재로37길 30 (만리동1가, 경기여자상업고등학교)",
+      "bigArea": "서울"
+    },
+    {
+      "centerCode": "PBT_B73",
+      "centerName": "인천기계공고",
+      "address": "인천광역시 미추홀구 한나루로 545 (주안동, 인천기계공업고등학교)",
+      "bigArea": "인천"
+    },
+    {
+      "centerCode": "PBT_B77",
+      "centerName": "별내고",
+      "address": "경기도 남양주시 별내5로 36 (별내동, 별내고등학교)",
+      "bigArea": "경기"
+    },
+    {
+      "centerCode": "PBT_B93",
+      "centerName": "경일관광경영고",
+      "address": "경기도 안산시 단원구 석수로 131 (선부동, 경일관광경영고등학교)",
+      "bigArea": "경기"
+    },
+    {
+      "centerCode": "PBT_C03",
+      "centerName": "소하고",
+      "address": "경기도 광명시 소하일로 21 (소하동, 소하고등학교)",
+      "bigArea": "경기"
+    },
+    {
+      "centerCode": "PBT_C12",
+      "centerName": "인하공전 8호관 평생교육원",
+      "address": "인천광역시 미추홀구 인하로 100 (용현동, 인하대,인하공전,정석항공고) 8호관",
+      "bigArea": "인천"
+    },
+    {
+      "centerCode": "PBT_C13",
+      "centerName": "강남대 샬롬관",
+      "address": "경기도 용인시 기흥구 강남로 40 (구갈동, 강남대학교) 샬롬관",
+      "bigArea": "경기"
+    },
+    {
+      "centerCode": "PBT_C21",
+      "centerName": "효자중",
+      "address": "경기도 의정부시 부용로185번길 15 (신곡동, 효자중학교)",
+      "bigArea": "경기"
+    },
+    {
+      "centerCode": "PBT_C33",
+      "centerName": "동광중",
+      "address": "경기도 성남시 중원구 원터로 84 (성남동, 동광중학교)",
+      "bigArea": "경기"
+    },
+    {
+      "centerCode": "PBT_C34",
+      "centerName": "고양신원중",
+      "address": "경기도 고양시 덕양구 신원2로 6 (신원동, 신원중학교)",
+      "bigArea": "경기"
+    },
+    {
+      "centerCode": "PBT_C54",
+      "centerName": "부명고",
+      "address": "경기도 부천시 석천로 127 (중동, 부명고등학교)",
+      "bigArea": "경기"
+    },
+    {
+      "centerCode": "PBT_C58",
+      "centerName": "숙지고",
+      "address": "경기도 수원시 팔달구 수성로182번길 100 (화서동, 숙지고등학교)",
+      "bigArea": "경기"
+    },
+    {
+      "centerCode": "PBT_D13",
+      "centerName": "고양일고",
+      "address": "경기도 고양시 덕양구 읍내로 13 (고양동, 고양일고등학교)",
+      "bigArea": "경기"
+    },
+    {
+      "centerCode": "PBT_D26",
+      "centerName": "신용중",
+      "address": "광주광역시 북구 첨단연신로133번길 32 (신용동, 신용중학교)",
+      "bigArea": "광주"
+    },
+    {
+      "centerCode": "PBT_D31",
+      "centerName": "경암중",
+      "address": "대구광역시 달서구 당산로30길 20 (성당동, 경화여자고등학교, 경암중학교) 경암중학교",
+      "bigArea": "대구"
+    },
+    {
+      "centerCode": "PBT_D33",
+      "centerName": "성지중",
+      "address": "대구광역시 달서구 성서동로 361 (이곡동, 성지중학교)",
+      "bigArea": "대구"
+    },
+    {
+      "centerCode": "PBT_D50",
+      "centerName": "대성여상",
+      "address": "충청북도 청주시 상당구 대성로 220 (수동, 대성여자상업고등학교)",
+      "bigArea": "충청"
+    },
+    {
+      "centerCode": "PBT_D53",
+      "centerName": "외삼중",
+      "address": "대전광역시 유성구 반석동로 75 (반석동, 외삼중학교)",
+      "bigArea": "대전"
+    },
+    {
+      "centerCode": "PBT_D55",
+      "centerName": "문정중",
+      "address": "대전광역시 서구 둔산북로 232-11 (둔산동, 문정중학교)",
+      "bigArea": "대전"
+    },
+    {
+      "centerCode": "PBT_D70",
+      "centerName": "배방중",
+      "address": "충청남도 아산시 배방읍 배방로 216 (배방읍)",
+      "bigArea": "충청"
+    },
+    {
+      "centerCode": "PBT_D75",
+      "centerName": "가온중",
+      "address": "충청남도 천안시 동남구 청수6로 83 (청당동, 가온중학교)",
+      "bigArea": "충청"
+    },
+    {
+      "centerCode": "PBT_D81",
+      "centerName": "광주주월중",
+      "address": "광주광역시 남구 옹정길 9 (주월동, 주월중학교)",
+      "bigArea": "광주"
+    },
+    {
+      "centerCode": "PBT_D86",
+      "centerName": "광주중",
+      "address": "광주광역시 서구 화개중앙로 60 (금호동, 광주중학교)",
+      "bigArea": "광주"
+    },
+    {
+      "centerCode": "PBT_E16",
+      "centerName": "인제대 신어관",
+      "address": "경상남도 김해시 인제로 197",
+      "bigArea": "경남"
+    },
+    {
+      "centerCode": "PBT_E28",
+      "centerName": "대가대 취창업관(B1)",
+      "address": "경상북도 경산시 하양로 13",
+      "bigArea": "경북"
+    },
+    {
+      "centerCode": "PBT_E34",
+      "centerName": "대가대 교양관(A2)",
+      "address": "경상북도 경산시 하양로 13",
+      "bigArea": "경북"
+    },
+    {
+      "centerCode": "PBT_E43",
+      "centerName": "청주대성중",
+      "address": "충청북도 청주시 흥덕구 사운로 342 (신봉동, 대성중학교)",
+      "bigArea": "충청"
+    },
+    {
+      "centerCode": "PBT_E45",
+      "centerName": "천안서여중",
+      "address": "충청남도 천안시 동남구 천안여상로 44 (봉명동, 천안서여자중학교,천안여자상업고등학교)",
+      "bigArea": "충청"
+    },
+    {
+      "centerCode": "PBT_E58",
+      "centerName": "세명대 인문학관",
+      "address": "충청북도 제천시 세명로 65",
+      "bigArea": "충청"
+    },
+    {
+      "centerCode": "PBT_E61",
+      "centerName": "전북대익산 교양관",
+      "address": "전라북도 익산시 고봉로 79",
+      "bigArea": "전북"
+    },
+    {
+      "centerCode": "PBT_E63",
+      "centerName": "전주대 진리관",
+      "address": "전라북도 전주시 완산구 천잠로 303",
+      "bigArea": "전북"
+    },
+    {
+      "centerCode": "PBT_E80",
+      "centerName": "군산대학교 인문대학",
+      "address": "전라북도 군산시 대학로 558",
+      "bigArea": "전북"
+    },
+    {
+      "centerCode": "PBT_E81",
+      "centerName": "연세대미래관",
+      "address": "강원도 원주시 연세대길 1",
+      "bigArea": "강원"
+    },
+    {
+      "centerCode": "PBT_E85",
+      "centerName": "춘천중",
+      "address": "강원도 춘천시 공지로 442-10 (중앙로3가, 춘천중학교)",
+      "bigArea": "강원"
+    },
+    {
+      "centerCode": "PBT_F14",
+      "centerName": "대성여중",
+      "address": "충청북도 청주시 상당구 대성로 208 (수동, 대성여자중학교)",
+      "bigArea": "충청"
+    },
+    {
+      "centerCode": "PBT_F18",
+      "centerName": "장안대 자아실현관",
+      "address": "경기도 화성시 봉담읍 삼천병마로 1182 (봉담읍, 장안대학교 자아실현관)",
+      "bigArea": "경기"
+    },
+    {
+      "centerCode": "PBT_F42",
+      "centerName": "정각중",
+      "address": "인천광역시 남동구 구월로 240 (구월동, 정각중학교)",
+      "bigArea": "인천"
+    },
+    {
+      "centerCode": "PBT_F43",
+      "centerName": "전남대(여수) 교양관",
+      "address": "전라남도 여수시 대학로 50 (둔덕동, 전남대학교 여수캠퍼스) 교양관",
+      "bigArea": "전남"
+    },
+    {
+      "centerCode": "PBT_F45",
+      "centerName": "천일중",
+      "address": "서울특별시 강동구 천중로 57 (천호동, 천일중학교)",
+      "bigArea": "서울"
+    },
+    {
+      "centerCode": "PBT_F49",
+      "centerName": "동대문중",
+      "address": "서울특별시 동대문구 사가정로 59 (전농동, 동대문중학교)",
+      "bigArea": "서울"
+    },
+    {
+      "centerCode": "PBT_F51",
+      "centerName": "제주대 아라캠 교양강의동",
+      "address": "제주특별자치도 제주시 제주대학로 102 (아라일동, 제주대 아라캠 교양강의동)",
+      "bigArea": "제주"
+    },
+    {
+      "centerCode": "PBT_F53",
+      "centerName": "풍성중",
+      "address": "서울특별시 송파구 강동대로2길 27 (풍납동, 풍성중학교)",
+      "bigArea": "서울"
+    },
+    {
+      "centerCode": "PBT_F78",
+      "centerName": "북악중",
+      "address": "서울특별시 성북구 정릉로12길 41 (정릉동, 북악중학교)",
+      "bigArea": "서울"
+    },
+    {
+      "centerCode": "PBT_F80",
+      "centerName": "하기중",
+      "address": "대전광역시 유성구 송림로48번길 6-30 (하기동, 대전하기중학교)",
+      "bigArea": "대전"
+    },
+    {
+      "centerCode": "PBT_F81",
+      "centerName": "강릉영동대학교 제2강의동",
+      "address": "강원도 강릉시 공제로 357 (홍제동, 강릉영동대학)",
+      "bigArea": "강원"
+    },
+    {
+      "centerCode": "PBT_H20",
+      "centerName": "공주대 세종한민족교육문화센터 신관",
+      "address": "충청남도 공주시 공주대학로 56 (신관동, 공주대학교 한민족교육문화센터 신관)",
+      "bigArea": "충청"
+    },
+    {
+      "centerCode": "PBT_H34",
+      "centerName": "청담중",
+      "address": "서울특별시 강남구 압구정로61길 36 (청담동, 청담중학교)",
+      "bigArea": "서울"
+    },
+    {
+      "centerCode": "PBT_H38",
+      "centerName": "동서울대 10호관",
+      "address": "경기도 성남시 수정구 복정로 76 (복정동, 동서울대학) 10호관",
+      "bigArea": "경기"
+    },
+    {
+      "centerCode": "PBT_H43",
+      "centerName": "수원정보과학고",
+      "address": "경기도 수원시 영통구 동수원로551번길 16 (원천동, 수원정보과학고등학교)",
+      "bigArea": "경기"
+    },
+    {
+      "centerCode": "PBT_H48",
+      "centerName": "경상대 교양학관(24번건물)",
+      "address": "경상남도 진주시 진주대로 501 (가좌동, 경상대학교) 교양학관(24번건물)",
+      "bigArea": "경남"
+    },
+    {
+      "centerCode": "PBT_H49",
+      "centerName": "마곡하늬중",
+      "address": "서울특별시 강서구 마곡서1로 16 (마곡동) 마곡하늬중학교",
+      "bigArea": "서울"
+    },
+    {
+      "centerCode": "PBT_H66",
+      "centerName": "영진고",
+      "address": "대구광역시 북구 동북로57길 9 (복현동, 영진고등학교)",
+      "bigArea": "대구"
+    },
+    {
+      "centerCode": "PBT_H74",
+      "centerName": "광주대 호심관",
+      "address": "광주광역시 남구 효덕로 277 (진월동, 광주대학교) 호심관",
+      "bigArea": "광주"
+    },
+    {
+      "centerCode": "PBT_H79",
+      "centerName": "경기경영고",
+      "address": "경기도 부천시 심곡로 100 (심곡본동) 경기경영고등학교",
+      "bigArea": "경기"
+    },
+    {
+      "centerCode": "PBT_H81",
+      "centerName": "진접고",
+      "address": "경기도 남양주시 진접읍 해밀예당2로 13 (진접읍, 진접고등학교)",
+      "bigArea": "경기"
+    },
+    {
+      "centerCode": "PBT_H86",
+      "centerName": "한국영상대본관",
+      "address": "세종특별자치시 장군면 대학길 300 (장군면, 한국영상대학교) 본관",
+      "bigArea": "세종"
+    },
+    {
+      "centerCode": "PBT_H91",
+      "centerName": "성수고",
+      "address": "서울특별시 성동구 서울숲길 18 (성수동1가, 성수중,고등학교) 성수고등학교",
+      "bigArea": "서울"
+    },
+    {
+      "centerCode": "PBT_H92",
+      "centerName": "풍양중",
+      "address": "경기도 남양주시 진접읍 해밀예당1로 109 (진접읍, 풍양중학교) .",
+      "bigArea": "경기"
+    },
+    {
+      "centerCode": "PBT_H93",
+      "centerName": "상무고",
+      "address": "광주광역시 서구 상무민주로32번길 28 (쌍촌동, 상무고등학교)",
+      "bigArea": "광주"
+    },
+    {
+      "centerCode": "PBT_H94",
+      "centerName": "경상대 가좌캠퍼스 GNU국제관",
+      "address": "경상남도 진주시 진주대로 501 (가좌동, 경상국립대학교 가좌캠퍼스) 경상대 가좌캠퍼스 GNU국제관",
+      "bigArea": "경남"
+    },
+    {
+      "centerCode": "PBT_K26",
+      "centerName": "하계중",
+      "address": "서울특별시 노원구 노원로 261-8 (하계동, 하계중학교) 하계중학교",
+      "bigArea": "서울"
+    },
+    {
+      "centerCode": "PBT_L01",
+      "centerName": "전주오송중",
+      "address": "전라북도 전주시 덕진구 천마산로 69 (송천동2가, 오송중학교)",
+      "bigArea": "전북"
+    },
+    {
+      "centerCode": "PBT_M11",
+      "centerName": "늘푸른고",
+      "address": "경기도 성남시 분당구 성남대로407번길 26 (정자동, 늘푸른고등학교)",
+      "bigArea": "경기"
+    },
+    {
+      "centerCode": "PBT_M13",
+      "centerName": "운정중",
+      "address": "경기도 파주시 와석순환로 35-33 (야당동) 운정중학교",
+      "bigArea": "경기"
+    },
+    {
+      "centerCode": "PBT_M20",
+      "centerName": "청림중",
+      "address": "경기도 화성시 동탄산척로 94 (산척동, 청림중학교)",
+      "bigArea": "경기"
+    },
+    {
+      "centerCode": "PBT_M23",
+      "centerName": "진관고",
+      "address": "서울특별시 은평구 진관4로 26 (진관동, 진관고등학교) .",
+      "bigArea": "서울"
+    },
+    {
+      "centerCode": "PBT_M26",
+      "centerName": "방산중",
+      "address": "서울특별시 송파구 오금로29길 31 (방이동, 방산중학교)",
+      "bigArea": "서울"
+    },
+    {
+      "centerCode": "PBT_M28",
+      "centerName": "YBM센터(대구 동성로)",
+      "address": "대구광역시 중구 동성로1길 15 (동성로3가) 유니온스퀘어 4층 YBM어학원",
+      "bigArea": "대구"
+    },
+    {
+      "centerCode": "PBT_M29",
+      "centerName": "포천일고",
+      "address": "경기도 포천시 군내면 청군로 3426 (군내면, 포천일고등학교)",
+      "bigArea": "경기"
+    },
+    {
+      "centerCode": "PBT_M30",
+      "centerName": "매홀중",
+      "address": "경기도 오산시 내삼미로48번길 17 (수청동, 매홀중학교)",
+      "bigArea": "경기"
+    },
+    {
+      "centerCode": "PBT_M31",
+      "centerName": "성재중",
+      "address": "서울특별시 강서구 허준로 36 (가양동, 성재중학교)",
+      "bigArea": "서울"
+    },
+    {
+      "centerCode": "PBT_M46",
+      "centerName": "광남고",
+      "address": "서울특별시 광진구 아차산로70길 17-16 (광장동, 광남고등학교)",
+      "bigArea": "서울"
+    },
+    {
+      "centerCode": "PBT_M51",
+      "centerName": "목포해양대 글로벌창의융합관",
+      "address": "전라남도 목포시 해양대학로 91 (죽교동, 해양대학교) 목포해양대학교 글로벌창의융합관 3층 국제교류원",
+      "bigArea": "전남"
+    },
+    {
+      "centerCode": "PBT_M60",
+      "centerName": "한국교통대 종합강의관",
+      "address": "충청북도 충주시 대소원면 대학로 50 (대소원면, 한국교통대학교)",
+      "bigArea": "충청"
+    },
+    {
+      "centerCode": "PBT_M64",
+      "centerName": "신도중",
+      "address": "서울특별시 은평구 진관1로 77-30 (진관동, 신도중학교)",
+      "bigArea": "서울"
+    },
+    {
+      "centerCode": "PBT_M76",
+      "centerName": "성명여중",
+      "address": "대구광역시 중구 국채보상로102길 48 (동산동, 성명여중,신명고등학교)",
+      "bigArea": "대구"
+    },
+    {
+      "centerCode": "PBT_M82",
+      "centerName": "경동대 양주캠 우당관",
+      "address": "경기도 양주시 경동대학로 27 (고암동, 경동대학교양주캠퍼스) 우당관",
+      "bigArea": "경기"
+    },
+    {
+      "centerCode": "PBT_M85",
+      "centerName": "중화고",
+      "address": "서울특별시 중랑구 봉화산로27길 62 (중화동, 중화고등학교)",
+      "bigArea": "서울"
+    },
+    {
+      "centerCode": "PBT_M91",
+      "centerName": "동탄목동중",
+      "address": "경기도 화성시 동탄순환대로20길 52 (목동)",
+      "bigArea": "경기"
+    },
+    {
+      "centerCode": "PBT_M94",
+      "centerName": "송절중",
+      "address": "충청북도 청주시 흥덕구 송절로 81 (송절동, 송절중학교)",
+      "bigArea": "충청"
+    },
+    {
+      "centerCode": "PBT_M96",
+      "centerName": "세종미래고",
+      "address": "세종특별자치시 부강면 문곡달미길 6 (부강면, 세종하이텍고등학교)",
+      "bigArea": "세종"
+    },
+    {
+      "centerCode": "PBT_M97",
+      "centerName": "심학고",
+      "address": "경기도 파주시 운정중앙로 21 (동패동, 심학고등학교)",
+      "bigArea": "경기"
+    },
+    {
+      "centerCode": "PBT_M98",
+      "centerName": "창원대 경영대학(21호관)",
+      "address": "경상남도 창원시 의창구 창원대학로 20 (퇴촌동, 창원대학교)",
+      "bigArea": "경남"
+    },
+    {
+      "centerCode": "PBT_M99",
+      "centerName": "새롬고",
+      "address": "세종특별자치시 새롬서로 68 (새롬동, 새롬고등학교)",
+      "bigArea": "세종"
+    },
+    {
+      "centerCode": "PBT_N02",
+      "centerName": "서천중",
+      "address": "경기도 용인시 기흥구 서천동로 7 (서천동, 서천중학교)",
+      "bigArea": "경기"
+    },
+    {
+      "centerCode": "PBT_N07",
+      "centerName": "송파중",
+      "address": "서울특별시 송파구 동남로 203 (가락동, 송파중학교)",
+      "bigArea": "서울"
+    },
+    {
+      "centerCode": "PBT_N08",
+      "centerName": "목포대 정보종합센터",
+      "address": "전라남도 무안군 청계면 영산로 1666 (청계면)",
+      "bigArea": "전남"
+    },
+    {
+      "centerCode": "PBT_N10",
+      "centerName": "방산고",
+      "address": "서울특별시 송파구 오금로27길 18 (방이동, 방산고등학교)",
+      "bigArea": "서울"
+    },
+    {
+      "centerCode": "PBT_N14",
+      "centerName": "순천청암대 청암관",
+      "address": "전라남도 순천시 녹색로 1641 (덕월동, 순천청암대학)",
+      "bigArea": "전남"
+    },
+    {
+      "centerCode": "PBT_N15",
+      "centerName": "한영대(여수) 공학관",
+      "address": "전라남도 여수시 장군산길 18-43 (여서동, 한영대학교, 한영고등학교) 한영대학교 공학관",
+      "bigArea": "전남"
+    },
+    {
+      "centerCode": "PBT_N16",
+      "centerName": "용인백현중",
+      "address": "경기도 용인시 기흥구 동백7로107번길 20 (동백동, 용인백현중학교)",
+      "bigArea": "경기"
+    },
+    {
+      "centerCode": "PBT_N17",
+      "centerName": "창원대 인문대학",
+      "address": "경상남도 창원시 의창구 창원대학로 20 (퇴촌동, 창원대학교)",
+      "bigArea": "경남"
+    },
+    {
+      "centerCode": "PBT_N21",
+      "centerName": "창원문성대 기술관(10호관)",
+      "address": "경상남도 창원시 성산구 충혼로 91 (두대동, 창원문성대학) 창원문성대학교 기술관(10호관)",
+      "bigArea": "경남"
+    },
+    {
+      "centerCode": "PBT_N24",
+      "centerName": "한국주얼리고",
+      "address": "인천광역시 서구 서곶로 693-1 (백석동, 한국주얼리고등학교)",
+      "bigArea": "인천"
+    },
+    {
+      "centerCode": "PBT_N25",
+      "centerName": "서산여중",
+      "address": "충청남도 서산시 정주골6길 11 (석림동, 서산여중학교)",
+      "bigArea": "충청"
+    },
+    {
+      "centerCode": "PBT_N26",
+      "centerName": "인천현송중",
+      "address": "인천광역시 연수구 아카데미로312번길 84 (송도동, 인천현송중학교)",
+      "bigArea": "인천"
+    },
+    {
+      "centerCode": "PBT_N31",
+      "centerName": "충주공고",
+      "address": "충청북도 충주시 형설로 120 (용산동, 충주공업고등학교)",
+      "bigArea": "충청"
+    },
+    {
+      "centerCode": "PBT_N33",
+      "centerName": "공주영명고",
+      "address": "충청남도 공주시 영명학당2길 33 (중동, 공주영명중고등학교)",
+      "bigArea": "충청"
+    },
+    {
+      "centerCode": "PBT_N34",
+      "centerName": "광주금구중",
+      "address": "광주광역시 광산구 목련로153번길 76 (운남동, 금구중학교)",
+      "bigArea": "광주"
+    },
+    {
+      "centerCode": "PBT_N35",
+      "centerName": "한솔고",
+      "address": "경기도 성남시 분당구 내정로 70 (정자동, 한솔고등학교)",
+      "bigArea": "경기"
+    },
+    {
+      "centerCode": "PBT_N37",
+      "centerName": "옥포중",
+      "address": "경상남도 거제시 옥포대첩로 99 (옥포동, 옥포중학교)",
+      "bigArea": "경남"
+    },
+    {
+      "centerCode": "PBT_N43",
+      "centerName": "포항대 근면관",
+      "address": "경상북도 포항시 북구 흥해읍 포항대학로 7 (흥해읍, 포항대학교) 근면관",
+      "bigArea": "경북"
+    },
+    {
+      "centerCode": "PBT_N48",
+      "centerName": "김포과학기술고",
+      "address": "경기도 김포시 봉화로 69 (북변동, 김포과학기술고등학교)",
+      "bigArea": "경기"
+    },
+    {
+      "centerCode": "PBT_N54",
+      "centerName": "운양고",
+      "address": "경기도 김포시 김포한강11로 58 (운양동, 운양고등학교)",
+      "bigArea": "경기"
+    },
+    {
+      "centerCode": "PBT_N55",
+      "centerName": "누원고",
+      "address": "서울특별시 도봉구 마들로 849 (도봉동, 누원고등학교)",
+      "bigArea": "서울"
+    },
+    {
+      "centerCode": "PBT_N56",
+      "centerName": "사직중",
+      "address": "부산광역시 동래구 쇠미로51번길 30 (사직동, 사직중학교)",
+      "bigArea": "부산"
+    },
+    {
+      "centerCode": "PBT_N60",
+      "centerName": "봉화중",
+      "address": "서울특별시 중랑구 망우로70길 89 (망우동, 봉화중학교)",
+      "bigArea": "서울"
+    },
+    {
+      "centerCode": "PBT_N62",
+      "centerName": "수리고",
+      "address": "경기도 군포시 수리산로 39 (산본동, 수리고등학교)",
+      "bigArea": "경기"
+    },
+    {
+      "centerCode": "PBT_N64",
+      "centerName": "목암중",
+      "address": "경기도 고양시 덕양구 푸른마을로 65 (고양동, 목암중학교)",
+      "bigArea": "경기"
+    },
+    {
+      "centerCode": "PBT_N69",
+      "centerName": "수현중",
+      "address": "경기도 화성시 효행구 봉담읍 상리3길 136 (봉담읍, 수현중학교)",
+      "bigArea": "경기"
+    },
+    {
+      "centerCode": "PBT_N71",
+      "centerName": "인천바이오과학고",
+      "address": "인천광역시 연수구 용담로 12 (청학동, 인천바이오과학고등학교)",
+      "bigArea": "인천"
+    }
+  ]
+}
