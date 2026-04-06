@@ -245,3 +245,69 @@ test("runCenterRefresh check mode reports pending diffs without mutating files",
   assert.equal(result.changed, true);
   assert.equal(await readFile(csvPath, "utf8"), "EXIST_001,37.5000,127.0000\n");
 });
+
+test("runCenterRefresh retries on transient network errors and succeeds", async () => {
+  const workspace = await mkdtemp(path.join(tmpdir(), "toeic-centers-retry-"));
+  const csvPath = path.join(workspace, "toeic_centers.csv");
+  const reportPath = path.join(workspace, "report.json");
+  const statePath = path.join(workspace, "state.json");
+
+  await writeFile(csvPath, "", "utf8");
+
+  let callCount = 0;
+  const fetchImpl = async () => {
+    callCount++;
+    if (callCount === 1) {
+      const error = new TypeError("fetch failed");
+      error.cause = Object.assign(new Error("socket disconnected"), { code: "ECONNRESET" });
+      throw error;
+    }
+    return {
+      ok: true,
+      async text() {
+        return JSON.stringify([]);
+      },
+    };
+  };
+
+  await runCenterRefresh({
+    fetchImpl,
+    csvPath,
+    reportPath,
+    statePath,
+    check: false,
+    retryBaseDelayMs: 0,
+  });
+
+  assert.equal(callCount, 2);
+});
+
+test("runCenterRefresh does not retry on non-transient errors", async () => {
+  const workspace = await mkdtemp(path.join(tmpdir(), "toeic-centers-no-retry-"));
+  const csvPath = path.join(workspace, "toeic_centers.csv");
+  const reportPath = path.join(workspace, "report.json");
+  const statePath = path.join(workspace, "state.json");
+
+  await writeFile(csvPath, "", "utf8");
+
+  let callCount = 0;
+  const fetchImpl = async () => {
+    callCount++;
+    throw new TypeError("unexpected error without transient code");
+  };
+
+  await assert.rejects(
+    () =>
+      runCenterRefresh({
+        fetchImpl,
+        csvPath,
+        reportPath,
+        statePath,
+        check: false,
+        retryBaseDelayMs: 0,
+      }),
+    /TOEIC upstream fetch failed/u,
+  );
+
+  assert.equal(callCount, 1);
+});

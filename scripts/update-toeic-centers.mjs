@@ -16,6 +16,13 @@ const DEFAULT_STATE_PATH = path.resolve(
   "reports/toeic-centers-state.json",
 );
 
+const sleep = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
+
+const isTransientNetworkError = (error) => {
+  const code = error?.cause?.code ?? error?.code;
+  return ["ECONNRESET", "ETIMEDOUT", "ECONNREFUSED", "UND_ERR_SOCKET", "EPIPE"].includes(code);
+};
+
 const HTML_ENTITY_MAP = {
   amp: "&",
   lt: "<",
@@ -136,24 +143,36 @@ const formatUpstreamParams = (params) =>
 const summarizeResponseText = (text) =>
   text.replace(/\s+/g, " ").trim().slice(0, 200);
 
-const postToToeicUpstream = async (fetchImpl, upstreamUrl, params) => {
+const postToToeicUpstream = async (
+  fetchImpl,
+  upstreamUrl,
+  params,
+  { maxRetries = 2, retryBaseDelayMs = 1000 } = {},
+) => {
   const requestContext = formatUpstreamParams(params);
   let response;
 
-  try {
-    response = await fetchImpl(upstreamUrl, {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/x-www-form-urlencoded; charset=UTF-8",
-        "User-Agent": "Mozilla/5.0",
-        Referer: "https://m.exam.toeic.co.kr/receipt/centerMap.php",
-      },
-      body: new URLSearchParams(params).toString(),
-    });
-  } catch (error) {
-    throw new Error(`TOEIC upstream fetch failed for ${requestContext}`, {
-      cause: error,
-    });
+  for (let attempt = 0; attempt <= maxRetries; attempt++) {
+    try {
+      response = await fetchImpl(upstreamUrl, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/x-www-form-urlencoded; charset=UTF-8",
+          "User-Agent": "Mozilla/5.0",
+          Referer: "https://m.exam.toeic.co.kr/receipt/centerMap.php",
+        },
+        body: new URLSearchParams(params).toString(),
+      });
+      break;
+    } catch (error) {
+      if (attempt < maxRetries && isTransientNetworkError(error)) {
+        await sleep(retryBaseDelayMs * 2 ** attempt);
+        continue;
+      }
+      throw new Error(`TOEIC upstream fetch failed for ${requestContext}`, {
+        cause: error,
+      });
+    }
   }
 
   if (!response.ok) {
@@ -335,6 +354,7 @@ export const runCenterRefresh = async ({
   compareReportPath = reportPath,
   statePath = DEFAULT_STATE_PATH,
   check = false,
+  retryBaseDelayMs = 1000,
 } = {}) => {
   const csvText = await readFile(csvPath, "utf8");
   const hasBom = csvText.startsWith("\uFEFF");
@@ -343,10 +363,12 @@ export const runCenterRefresh = async ({
   const existingCsvLines = parseCsvRows(csvText);
   const previousStateByCode = await loadPreviousState(statePath);
 
-  const schedules = await postToToeicUpstream(fetchImpl, upstreamUrl, {
-    proc: "getReceiptScheduleList",
-    examCate: "TOE",
-  });
+  const schedules = await postToToeicUpstream(
+    fetchImpl,
+    upstreamUrl,
+    { proc: "getReceiptScheduleList", examCate: "TOE" },
+    { retryBaseDelayMs },
+  );
 
   if (!Array.isArray(schedules)) {
     throw new Error("Unexpected schedule payload from TOEIC upstream.");
@@ -356,26 +378,24 @@ export const runCenterRefresh = async ({
   const observedCentersByCode = new Map();
 
   for (const schedule of scannedSchedules) {
-    const regionPayload = await postToToeicUpstream(fetchImpl, upstreamUrl, {
-      proc: "getExamAreaInfo",
-      examCate: "TOE",
-      sbGoodsType1: "TOE",
-      examCode: schedule.examCode,
-      bigArea: "",
-    });
+    const regionPayload = await postToToeicUpstream(
+      fetchImpl,
+      upstreamUrl,
+      { proc: "getExamAreaInfo", examCate: "TOE", sbGoodsType1: "TOE", examCode: schedule.examCode, bigArea: "" },
+      { retryBaseDelayMs },
+    );
 
     const bigAreas = Array.isArray(regionPayload?.[0])
       ? regionPayload[0].map((area) => area.big_area).filter(Boolean)
       : [];
 
     for (const bigArea of bigAreas) {
-      const areaPayload = await postToToeicUpstream(fetchImpl, upstreamUrl, {
-        proc: "getExamAreaInfo",
-        examCate: "TOE",
-        sbGoodsType1: "TOE",
-        examCode: schedule.examCode,
-        bigArea,
-      });
+      const areaPayload = await postToToeicUpstream(
+        fetchImpl,
+        upstreamUrl,
+        { proc: "getExamAreaInfo", examCate: "TOE", sbGoodsType1: "TOE", examCode: schedule.examCode, bigArea },
+        { retryBaseDelayMs },
+      );
 
       const centers = Array.isArray(areaPayload?.[2]) ? areaPayload[2] : [];
 
@@ -404,14 +424,19 @@ export const runCenterRefresh = async ({
       continue;
     }
 
-    const detailPayload = await postToToeicUpstream(fetchImpl, upstreamUrl, {
-      proc: "getExamAreaInfo",
-      examCate: "TOE",
-      sbGoodsType1: "TOE",
-      examCode: observedCenter.examCode,
-      bigArea: observedCenter.bigArea,
-      centerCode: observedCenter.centerCode,
-    });
+    const detailPayload = await postToToeicUpstream(
+      fetchImpl,
+      upstreamUrl,
+      {
+        proc: "getExamAreaInfo",
+        examCate: "TOE",
+        sbGoodsType1: "TOE",
+        examCode: observedCenter.examCode,
+        bigArea: observedCenter.bigArea,
+        centerCode: observedCenter.centerCode,
+      },
+      { retryBaseDelayMs },
+    );
 
     const detail = Array.isArray(detailPayload?.[3]) ? detailPayload[3][0] : null;
     const rawLat = detail?.map_x ?? null;
@@ -599,7 +624,7 @@ const runCli = async () => {
   );
 
   if (options.check && result.changed) {
-    process.exitCode = 1;
+    process.exitCode = 2;
   }
 };
 
