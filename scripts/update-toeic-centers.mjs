@@ -124,19 +124,46 @@ const writeTextIfChanged = async (targetPath, nextText) => {
   return true;
 };
 
-const postToToeicUpstream = async (fetchImpl, upstreamUrl, params) => {
-  const response = await fetchImpl(upstreamUrl, {
-    method: "POST",
-    headers: {
-      "Content-Type": "application/x-www-form-urlencoded; charset=UTF-8",
-      "User-Agent": "Mozilla/5.0",
-      Referer: "https://m.exam.toeic.co.kr/receipt/centerMap.php",
-    },
-    body: new URLSearchParams(params).toString(),
+const formatUpstreamParams = (params) =>
+  JSON.stringify({
+    proc: params.proc ?? null,
+    examCate: params.examCate ?? null,
+    examCode: params.examCode ?? null,
+    bigArea: params.bigArea ?? null,
+    centerCode: params.centerCode ?? null,
   });
 
+const summarizeResponseText = (text) =>
+  text.replace(/\s+/g, " ").trim().slice(0, 200);
+
+const postToToeicUpstream = async (fetchImpl, upstreamUrl, params) => {
+  const requestContext = formatUpstreamParams(params);
+  let response;
+
+  try {
+    response = await fetchImpl(upstreamUrl, {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/x-www-form-urlencoded; charset=UTF-8",
+        "User-Agent": "Mozilla/5.0",
+        Referer: "https://m.exam.toeic.co.kr/receipt/centerMap.php",
+      },
+      body: new URLSearchParams(params).toString(),
+    });
+  } catch (error) {
+    throw new Error(`TOEIC upstream fetch failed for ${requestContext}`, {
+      cause: error,
+    });
+  }
+
   if (!response.ok) {
-    throw new Error(`TOEIC upstream request failed: ${response.status}`);
+    const responseText = (await response.text()).trim();
+    const responseSummary = responseText
+      ? ` | body: ${summarizeResponseText(responseText)}`
+      : "";
+    throw new Error(
+      `TOEIC upstream request failed for ${requestContext}: ${response.status}${responseSummary}`,
+    );
   }
 
   const responseText = (await response.text()).trim();
@@ -145,7 +172,14 @@ const postToToeicUpstream = async (fetchImpl, upstreamUrl, params) => {
     return null;
   }
 
-  return JSON.parse(responseText);
+  try {
+    return JSON.parse(responseText);
+  } catch (error) {
+    throw new Error(
+      `TOEIC upstream returned invalid JSON for ${requestContext}: ${summarizeResponseText(responseText)}`,
+      { cause: error },
+    );
+  }
 };
 
 export const selectExamSchedules = (schedules) => {
@@ -571,7 +605,7 @@ const runCli = async () => {
 
 if (import.meta.url === `file://${process.argv[1]}`) {
   runCli().catch((error) => {
-    console.error(error instanceof Error ? error.message : String(error));
+    console.error(error instanceof Error ? error : String(error));
     process.exitCode = 1;
   });
 }
