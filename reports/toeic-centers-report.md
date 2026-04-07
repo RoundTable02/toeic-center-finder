@@ -1,16 +1,15 @@
 # TOEIC Center Refresh Report
 
 ## Summary
-- Scanned schedules: 20
-- Observed centers: 238
-- CSV centers: 277
+- Scanned schedules: 19
+- Observed centers: 236
+- CSV centers: 285
 - New centers: 0
-- Stale candidates: 39
+- Stale candidates: 49
 - Changed metadata: 0
 - Manual review: 0
 
 ## Scanned Schedules
-- 2026-03-29 (TOE_566)
 - 2026-04-12 (TOE_567)
 - 2026-04-26 (TOE_568)
 - 2026-05-10 (TOE_569)
@@ -42,6 +41,7 @@
 - PBT_042 (unknown) | -
 - PBT_056 (unknown) | -
 - PBT_095 (unknown) | -
+- PBT_144 울산상고 | 울산
 - PBT_179 (unknown) | -
 - PBT_360 (unknown) | -
 - PBT_476 (unknown) | -
@@ -52,28 +52,37 @@
 - PBT_655 (unknown) | -
 - PBT_662 (unknown) | -
 - PBT_761 (unknown) | -
+- PBT_889 무학중 | 서울
 - PBT_948 (unknown) | -
 - PBT_957 (unknown) | -
 - PBT_965 (unknown) | -
+- PBT_973 서운중 | 서울
 - PBT_974 (unknown) | -
 - PBT_B03 (unknown) | -
-- PBT_D40 (unknown) | -
+- PBT_D31 경암중 | 대구
 - PBT_D44 (unknown) | -
+- PBT_D86 광주중 | 광주
+- PBT_E16 인제대 신어관 | 경남
 - PBT_E22 (unknown) | -
 - PBT_F24 (unknown) | -
-- PBT_H02 (unknown) | -
+- PBT_F42 정각중 | 인천
 - PBT_H35 (unknown) | -
 - PBT_H40 (unknown) | -
 - PBT_H42 (unknown) | -
-- PBT_H67 (unknown) | -
 - PBT_H68 (unknown) | -
 - PBT_H90 (unknown) | -
 - PBT_M12 (unknown) | -
 - PBT_M15 (unknown) | -
+- PBT_M46 광남고 | 서울
 - PBT_M50 (unknown) | -
 - PBT_M71 (unknown) | -
+- PBT_M76 성명여중 | 대구
+- PBT_M91 동탄목동중 | 경기
 - PBT_N03 (unknown) | -
+- PBT_N08 목포대 정보종합센터 | 전남
 - PBT_N19 (unknown) | -
+- PBT_N21 창원문성대 기술관(10호관) | 경남
+- PBT_N71 인천바이오과학고 | 인천
 
 ## Changed Metadata
 - None
