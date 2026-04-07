@@ -1,19 +1,15 @@
 {
   "version": 1,
   "summary": {
-    "scannedScheduleCount": 20,
-    "observedCenterCount": 238,
-    "csvCenterCount": 277,
+    "scannedScheduleCount": 19,
+    "observedCenterCount": 236,
+    "csvCenterCount": 285,
     "newCenterCount": 0,
-    "staleCenterCount": 39,
+    "staleCenterCount": 49,
     "changedMetadataCount": 0,
     "manualReviewCount": 0
   },
   "scannedSchedules": [
-    {
-      "examDay": "2026-03-29",
-      "examCode": "TOE_566"
-    },
     {
       "examDay": "2026-04-12",
       "examCode": "TOE_567"
@@ -136,6 +132,12 @@
       "bigArea": null
     },
     {
+      "centerCode": "PBT_144",
+      "centerName": "울산상고",
+      "address": "울산광역시 울주군 장검길 11",
+      "bigArea": "울산"
+    },
+    {
       "centerCode": "PBT_179",
       "centerName": null,
       "address": null,
@@ -196,6 +198,12 @@
       "bigArea": null
     },
     {
+      "centerCode": "PBT_889",
+      "centerName": "무학중",
+      "address": "서울특별시 성동구 행당로 120 (행당동, 무학중학교)",
+      "bigArea": "서울"
+    },
+    {
       "centerCode": "PBT_948",
       "centerName": null,
       "address": null,
@@ -214,6 +222,12 @@
       "bigArea": null
     },
     {
+      "centerCode": "PBT_973",
+      "centerName": "서운중",
+      "address": "서울특별시 서초구 서운로 115 (서초동, 서운중학교)",
+      "bigArea": "서울"
+    },
+    {
       "centerCode": "PBT_974",
       "centerName": null,
       "address": null,
@@ -226,16 +240,28 @@
       "bigArea": null
     },
     {
-      "centerCode": "PBT_D40",
-      "centerName": null,
-      "address": null,
-      "bigArea": null
+      "centerCode": "PBT_D31",
+      "centerName": "경암중",
+      "address": "대구광역시 달서구 당산로30길 20 (성당동, 경화여자고등학교, 경암중학교) 경암중학교",
+      "bigArea": "대구"
     },
     {
       "centerCode": "PBT_D44",
       "centerName": null,
       "address": null,
       "bigArea": null
+    },
+    {
+      "centerCode": "PBT_D86",
+      "centerName": "광주중",
+      "address": "광주광역시 서구 화개중앙로 60 (금호동, 광주중학교)",
+      "bigArea": "광주"
+    },
+    {
+      "centerCode": "PBT_E16",
+      "centerName": "인제대 신어관",
+      "address": "경상남도 김해시 인제로 197",
+      "bigArea": "경남"
     },
     {
       "centerCode": "PBT_E22",
@@ -250,10 +276,10 @@
       "bigArea": null
     },
     {
-      "centerCode": "PBT_H02",
-      "centerName": null,
-      "address": null,
-      "bigArea": null
+      "centerCode": "PBT_F42",
+      "centerName": "정각중",
+      "address": "인천광역시 남동구 구월로 240 (구월동, 정각중학교)",
+      "bigArea": "인천"
     },
     {
       "centerCode": "PBT_H35",
@@ -269,12 +295,6 @@
     },
     {
       "centerCode": "PBT_H42",
-      "centerName": null,
-      "address": null,
-      "bigArea": null
-    },
-    {
-      "centerCode": "PBT_H67",
       "centerName": null,
       "address": null,
       "bigArea": null
@@ -304,6 +324,12 @@
       "bigArea": null
     },
     {
+      "centerCode": "PBT_M46",
+      "centerName": "광남고",
+      "address": "서울특별시 광진구 아차산로70길 17-16 (광장동, 광남고등학교)",
+      "bigArea": "서울"
+    },
+    {
       "centerCode": "PBT_M50",
       "centerName": null,
       "address": null,
@@ -316,16 +342,46 @@
       "bigArea": null
     },
     {
+      "centerCode": "PBT_M76",
+      "centerName": "성명여중",
+      "address": "대구광역시 중구 국채보상로102길 48 (동산동, 성명여중,신명고등학교)",
+      "bigArea": "대구"
+    },
+    {
+      "centerCode": "PBT_M91",
+      "centerName": "동탄목동중",
+      "address": "경기도 화성시 동탄순환대로20길 52 (목동)",
+      "bigArea": "경기"
+    },
+    {
       "centerCode": "PBT_N03",
       "centerName": null,
       "address": null,
       "bigArea": null
     },
     {
+      "centerCode": "PBT_N08",
+      "centerName": "목포대 정보종합센터",
+      "address": "전라남도 무안군 청계면 영산로 1666 (청계면)",
+      "bigArea": "전남"
+    },
+    {
       "centerCode": "PBT_N19",
       "centerName": null,
       "address": null,
       "bigArea": null
+    },
+    {
+      "centerCode": "PBT_N21",
+      "centerName": "창원문성대 기술관(10호관)",
+      "address": "경상남도 창원시 성산구 충혼로 91 (두대동, 창원문성대학) 창원문성대학교 기술관(10호관)",
+      "bigArea": "경남"
+    },
+    {
+      "centerCode": "PBT_N71",
+      "centerName": "인천바이오과학고",
+      "address": "인천광역시 연수구 용담로 12 (청학동, 인천바이오과학고등학교)",
+      "bigArea": "인천"
     }
   ],
   "changedMetadata": [],

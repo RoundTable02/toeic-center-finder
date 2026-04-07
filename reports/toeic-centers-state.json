@@ -50,6 +50,12 @@
       "bigArea": "서울"
     },
     {
+      "centerCode": "PBT_058",
+      "centerName": "광양중",
+      "address": "서울특별시 광진구 자양로3길 7 (자양동, 서울광양중학교)",
+      "bigArea": "서울"
+    },
+    {
       "centerCode": "PBT_070",
       "centerName": "신림중",
       "address": "서울특별시 관악구 신림로 40 (신림동, 서울신림중학교)",
@@ -548,9 +554,21 @@
       "bigArea": "경기"
     },
     {
+      "centerCode": "PBT_764",
+      "centerName": "동일공고",
+      "address": "경기도 평택시 중앙로 315 (비전동) 동일공업고등학교",
+      "bigArea": "경기"
+    },
+    {
       "centerCode": "PBT_781",
       "centerName": "서울여중",
       "address": "서울특별시 마포구 백범로25길 34 (염리동) 서울여자중학교",
+      "bigArea": "서울"
+    },
+    {
+      "centerCode": "PBT_785",
+      "centerName": "수유중",
+      "address": "서울특별시 강북구 인수봉로37길 40 (수유동, 수유중학교)",
       "bigArea": "서울"
     },
     {
@@ -722,6 +740,12 @@
       "bigArea": "경기"
     },
     {
+      "centerCode": "PBT_A51",
+      "centerName": "포항대학(성실관)",
+      "address": "경상북도 포항시 북구 흥해읍 포항대학로 7 (흥해읍, 포항대학교)",
+      "bigArea": "경북"
+    },
+    {
       "centerCode": "PBT_B01",
       "centerName": "인왕중",
       "address": "서울특별시 서대문구 세검정로4길 69 (홍제동, 인왕중학교)",
@@ -836,6 +860,12 @@
       "bigArea": "경기"
     },
     {
+      "centerCode": "PBT_C70",
+      "centerName": "문곡고",
+      "address": "인천광역시 서구 청마로 52 (당하동, 인천 세무고등학교)",
+      "bigArea": "인천"
+    },
+    {
       "centerCode": "PBT_D13",
       "centerName": "고양일고",
       "address": "경기도 고양시 덕양구 읍내로 13 (고양동, 고양일고등학교)",
@@ -857,6 +887,12 @@
       "centerCode": "PBT_D33",
       "centerName": "성지중",
       "address": "대구광역시 달서구 성서동로 361 (이곡동, 성지중학교)",
+      "bigArea": "대구"
+    },
+    {
+      "centerCode": "PBT_D40",
+      "centerName": "대구상원중",
+      "address": "대구광역시 달서구 상인로 117 (상인동, 상원중학교)",
       "bigArea": "대구"
     },
     {
@@ -1034,10 +1070,22 @@
       "bigArea": "강원"
     },
     {
+      "centerCode": "PBT_H02",
+      "centerName": "인하공전 3호관",
+      "address": "인천광역시 미추홀구 인하로 100 (용현동, 인하대,인하공전,정석항공고)",
+      "bigArea": "인천"
+    },
+    {
       "centerCode": "PBT_H20",
       "centerName": "공주대 세종한민족교육문화센터 신관",
       "address": "충청남도 공주시 공주대학로 56 (신관동, 공주대학교 한민족교육문화센터 신관)",
       "bigArea": "충청"
+    },
+    {
+      "centerCode": "PBT_H28",
+      "centerName": "강릉영동대학교 제1강의동",
+      "address": "강원도 강릉시 공제로 357 (홍제동, 강릉영동대학) 강릉영동대 제1강의동",
+      "bigArea": "강원"
     },
     {
       "centerCode": "PBT_H34",
@@ -1074,6 +1122,12 @@
       "centerName": "영진고",
       "address": "대구광역시 북구 동북로57길 9 (복현동, 영진고등학교)",
       "bigArea": "대구"
+    },
+    {
+      "centerCode": "PBT_H67",
+      "centerName": "제주관광대학 초운관",
+      "address": "제주특별자치도 제주시 애월읍 평화로 2715 (애월읍, 제주관광대학) 초운관",
+      "bigArea": "제주"
     },
     {
       "centerCode": "PBT_H74",
@@ -1236,6 +1290,12 @@
       "centerName": "동탄목동중",
       "address": "경기도 화성시 동탄순환대로20길 52 (목동)",
       "bigArea": "경기"
+    },
+    {
+      "centerCode": "PBT_M93",
+      "centerName": "제주한라대 금호세계교육관A동",
+      "address": "제주특별자치도 제주시 한라대학로 38 (노형동, 제주한라대학교) 금호세계교육관",
+      "bigArea": "제주"
     },
     {
       "centerCode": "PBT_M94",
@@ -1403,6 +1463,12 @@
       "centerCode": "PBT_N60",
       "centerName": "봉화중",
       "address": "서울특별시 중랑구 망우로70길 89 (망우동, 봉화중학교)",
+      "bigArea": "서울"
+    },
+    {
+      "centerCode": "PBT_N61",
+      "centerName": "염경중",
+      "address": "서울특별시 강서구 양천로69길 35 (염창동, 염경중학교)",
       "bigArea": "서울"
     },
     {
